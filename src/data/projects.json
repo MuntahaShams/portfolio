@@ -1,0 +1,681 @@
+[
+        {
+                "slug": "video-rag-pipeline",
+                "title": "Video RAG Pipeline",
+                "category": [
+                        "GenAI",
+                        "NLP"
+                ],
+                "one_liner": "Retrieve and answer questions over video content using multimodal indexing + LLM synthesis.",
+                "problem": "Users need accurate Q&A over video content without manually scanning long recordings.",
+                "approach": [
+                        "Extracted transcripts + key segments",
+                        "Indexed chunks with embeddings for retrieval",
+                        "Generated grounded answers with references to segments"
+                ],
+                "results": [
+                        "Searchable video knowledge base",
+                        "Grounded answers over long videos"
+                ],
+                "tech": [
+                        "Python",
+                        "Embeddings",
+                        "Vector DB",
+                        "RAG",
+                        "LLM",
+                        "FastAPI",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/video-rag/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "text-rag-pipeline",
+                "title": "Text RAG Pipeline",
+                "category": [
+                        "GenAI",
+                        "NLP"
+                ],
+                "one_liner": "RAG system for document Q&A with grounded responses and clean UX.",
+                "problem": "Need trustworthy answers from internal documents with reduced hallucinations.",
+                "approach": [
+                        "Designed chunking + metadata strategy",
+                        "Implemented retrieval and context constraints",
+                        "Added answer formatting and safety checks"
+                ],
+                "results": [
+                        "More reliable answers",
+                        "Reusable RAG template for new corpora"
+                ],
+                "tech": [
+                        "Python",
+                        "Embeddings",
+                        "RAG",
+                        "LLM",
+                        "FastAPI",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/text-rag/cover.png",
+                        "images": [],
+                        "videos": [
+                        ]
+                }
+        },
+        {
+                "slug": "rag-stock-market-postgresql-gpt",
+                "title": "RAG Pipeline: AI-Driven Stock Market Querying & Data Retrieval (PostgreSQL + GPT)",
+                "category": [
+                        "GenAI",
+                        "NLP",
+                        "ML"
+                ],
+                "one_liner": "Natural-language querying over market data using PostgreSQL + retrieval + GPT integration.",
+                "problem": "Non-technical users need to query market data and get structured, explainable outputs.",
+                "approach": [
+                        "Stored structured data in PostgreSQL",
+                        "Combined retrieval with LLM reasoning where needed",
+                        "Returned structured responses for UI/dashboard use"
+                ],
+                "results": [
+                        "NL-to-insights workflow",
+                        "Outputs ready for visualization"
+                ],
+                "tech": [
+                        "Python",
+                        "PostgreSQL",
+                        "RAG",
+                        "LLM",
+                        "FastAPI",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/stock-rag/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "document-ai-custom-data-extraction",
+                "title": "Document AI for Custom Data Extraction",
+                "category": [
+                        "CV",
+                        "NLP"
+                ],
+                "one_liner": "Custom extraction pipeline for PDFs/images with validation and export.",
+                "problem": "Extracting structured fields from diverse documents is time-consuming and error-prone.",
+                "approach": [
+                        "OCR + layout parsing to detect sections",
+                        "Field extraction via rules + ML/NLP",
+                        "Validation layer and JSON/CSV export"
+                ],
+                "results": [
+                        "Robust extraction across variants",
+                        "Cleaner downstream ingestion"
+                ],
+                "tech": [
+                        "Python",
+                        "OCR",
+                        "OpenCV",
+                        "Regex",
+                        "spaCy",
+                        "pandas",
+                        "FastAPI",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/document-ai/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "custom-llm-text-generation-with-data-ui",
+                "title": "Custom AI Text Generation Powered by LLMs Integrated with Your Data + UI",
+                "category": [
+                        "GenAI",
+                        "NLP"
+                ],
+                "one_liner": "Domain-grounded generation system with UI controls and review workflow.",
+                "problem": "Teams need consistent, domain-specific generation tied to internal data sources.",
+                "approach": [
+                        "Integrated custom knowledge via retrieval/grounding",
+                        "Added templates, tone controls, and guardrails",
+                        "Built UI for generation, review, and export"
+                ],
+                "results": [
+                        "Consistent domain outputs",
+                        "Usable workflow for non-technical stakeholders"
+                ],
+                "tech": [
+                        "Python",
+                        "LLM",
+                        "RAG",
+                        "Embeddings",
+                        "FastAPI",
+                        "Flask/React",
+                        "Tailwind CSS",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/custom-llm/cover.png",
+                        "images": [],
+                        "videos": [ "/media/text-gen-ui/student_portal.mp4" ]
+                }
+        },
+        {
+                "slug": "n8n-automation",
+                "title": "n8n Automation",
+                "category": [
+                        "ML",
+                        "NLP"
+                ],
+                "one_liner": "Automated AI workflows using n8n for ingestion, enrichment, and notifications.",
+                "problem": "Teams need repeatable automation for AI pipelines without constantly writing glue code.",
+                "approach": [
+                        "Designed triggers + pipeline steps (ingest → process → store → notify)",
+                        "Integrated APIs (LLMs, databases, webhooks)",
+                        "Added retries, logging, and error handling"
+                ],
+                "results": [
+                        "Reduced manual ops work",
+                        "Faster iteration on AI workflows"
+                ],
+                "tech": [
+                        "n8n",
+                        "Webhooks",
+                        "APIs",
+                        "PostgreSQL",
+                        "Python",
+                        "LLM"
+                ],
+                "media": {
+                        "cover": "/media/n8n/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "yolo-segmentation",
+                "title": "Segmentation using YOLO",
+                "category": [
+                        "CV",
+                        "ML"
+                ],
+                "one_liner": "Segmentation pipeline with YOLO models and optimized inference exports.",
+                "problem": "Pixel-level segmentation needed for measurement/inspection tasks.",
+                "approach": [
+                        "Trained YOLO segmentation model with augmentation",
+                        "Improved dataset quality and evaluated IoU/precision/recall",
+                        "Exported to ONNX/TensorRT for faster inference"
+                ],
+                "results": [
+                        "Production-ready segmentation",
+                        "Optimized inference path"
+                ],
+                "tech": [
+                        "YOLOv8",
+                        "PyTorch",
+                        "OpenCV",
+                        "Ultralytics",
+                        "ONNX",
+                        "TensorRT",
+                        "CUDA",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/yolo-seg/cover.png",
+                        "images": [],
+                        "videos": [
+                                "/media/yolo-seg/nail_segmentation.mp4"
+                        ]
+                }
+        },
+        {
+                "slug": "stable-diffusion-art-generation",
+                "title": "Custom Stable Diffusion Model for Art Generation",
+                "category": [
+                        "GenAI",
+                        "CV"
+                ],
+                "one_liner": "Fine-tuned Stable Diffusion for a custom art style with controlled generation workflows.",
+                "problem": "Need a consistent visual style tailored to a specific dataset/brand/art direction.",
+                "approach": [
+                        "Prepared dataset + conditioning strategy",
+                        "Fine-tuned using LoRA/DreamBooth-style approach",
+                        "Created prompt presets and sampling configurations"
+                ],
+                "results": [
+                        "Consistent custom style outputs",
+                        "Reusable generation pipeline"
+                ],
+                "tech": [
+                        "Stable Diffusion",
+                        "Diffusers",
+                        "LoRA",
+                        "PyTorch",
+                        "CUDA",
+                        "ONNX",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/sd-art/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "text-search-on-image",
+                "title": "Text Search on Image",
+                "category": [
+                        "CV",
+                        "NLP"
+                ],
+                "one_liner": "Search inside images using OCR + indexing for fast retrieval.",
+                "problem": "Users need to search image archives (screenshots/scans) by the text inside them.",
+                "approach": [
+                        "Ran OCR and normalized extracted text",
+                        "Indexed text for keyword/semantic retrieval",
+                        "Highlighted matched regions in the UI"
+                ],
+                "results": [
+                        "Searchable image archive",
+                        "Visual highlighting of results"
+                ],
+                "tech": [
+                        "Python",
+                        "OCR",
+                        "OpenCV",
+                        "Regex",
+                        "Embeddings",
+                        "FastAPI"
+                ],
+                "media": {
+                        "cover": "/media/text-search-image/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "flutter-app-ai-backend",
+                "title": "Flutter App with AI Backend",
+                "category": [
+                        "ML",
+                        "NLP",
+                        "GenAI"
+                ],
+                "one_liner": "Flutter mobile app connected to an AI backend for inference and automation.",
+                "problem": "Deliver AI features to end users with a clean mobile UX and scalable backend.",
+                "approach": [
+                        "Built Flutter UI and core flows",
+                        "Designed FastAPI backend for model/LLM endpoints",
+                        "Containerized services and added deployment-ready APIs"
+                ],
+                "results": [
+                        "End-to-end app experience",
+                        "Stable backend for production usage"
+                ],
+                "tech": [
+                        "Flutter",
+                        "Dart",
+                        "FastAPI",
+                        "Python",
+                        "Docker",
+                        "PostgreSQL",
+                        "REST APIs"
+                ],
+                "media": {
+                        "cover": "/media/flutter-ai/cover.png",
+                        "images": [],
+                        "videos": [
+                                "/media/flutter-ai/flutter_app.mp4",
+                                "/media/flutter-ai/dog_app.mp4"
+                        ]
+                }
+        },
+        {
+                "slug": "address-extraction-document-ui",
+                "title": "Address Extraction from Document with UI",
+                "category": [
+                        "CV",
+                        "NLP"
+                ],
+                "one_liner": "Extract addresses from scanned documents with a review UI and export-ready outputs.",
+                "problem": "Address fields are noisy in scans; errors break shipping/billing workflows.",
+                "approach": [
+                        "OCR + layout heuristics to locate address blocks",
+                        "NER/rule-based parsing to structure components",
+                        "UI review step + correction workflow"
+                ],
+                "results": [
+                        "More accurate structured addresses",
+                        "Human-in-the-loop review workflow"
+                ],
+                "tech": [
+                        "Python",
+                        "OCR",
+                        "OpenCV",
+                        "spaCy",
+                        "Regex",
+                        "FastAPI/Flask",
+                        "Tailwind CSS",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/cover.png",
+                        "images": [],
+                        "videos": [
+                                "/media/address-extraction/address-extraction.mp4"
+                        ]
+                }
+        },
+        {
+                "slug": "yolo-detection",
+                "title": "Detection using YOLO",
+                "category": [
+                        "CV",
+                        "ML"
+                ],
+                "one_liner": "Real-time object detection with YOLOv8 and accelerated inference exports.",
+                "problem": "Accurate detection with low latency needed for real-time scenarios.",
+                "approach": [
+                        "Trained YOLOv8 with augmentation and evaluation loop",
+                        "Optimized inference using ONNX/TensorRT/CUDA",
+                        "Served via API and containerized for deployment"
+                ],
+                "results": [
+                        "Low-latency detection",
+                        "Deployable artifacts (ONNX/TensorRT)"
+                ],
+                "tech": [
+                        "YOLOv8",
+                        "PyTorch",
+                        "OpenCV",
+                        "Ultralytics",
+                        "TensorRT",
+                        "ONNX",
+                        "CUDA",
+                        "NumPy",
+                        "FastAPI",
+                        "Flask",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/yolo-detect/cover.png",
+                        "images": [],
+                        "videos": [
+                                "/media/yolo-detect/detection.mp4",
+                                "/media/yolo-detect/vehicle_detection.mp4",
+                                "/media/yolo-detect/traffic_light_detection.mp4"
+                        ]
+                }
+        },
+        {
+                "slug": "ml-prediction-dashboard",
+                "title": "ML Models Prediction Integrated with Dashboard",
+                "category": [
+                        "ML"
+                ],
+                "one_liner": "End-to-end ML predictions served via APIs and visualized in an interactive dashboard.",
+                "problem": "Stakeholders need transparent predictions with monitoring and clear visuals.",
+                "approach": [
+                        "Trained and compared multiple ML models",
+                        "Built REST APIs for inference and batch predictions",
+                        "Created dashboard for metrics and outputs"
+                ],
+                "results": [
+                        "Unified prediction + visualization workflow",
+                        "Reusable ML service template"
+                ],
+                "tech": [
+                        "Unsupervised Learning",
+                        "scikit-learn",
+                        "XGBoost",
+                        "LightGBM",
+                        "TensorFlow",
+                        "PyTorch",
+                        "pandas",
+                        "NumPy",
+                        "FastAPI",
+                        "Flask",
+                        "REST APIs",
+                        "Plotly",
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "Bootstrap",
+                        "Tailwind CSS",
+                        "PostgreSQL",
+                        "SQLite",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/ml-dashboard/cover.png",
+                        "images": [],
+                        "videos": [
+                                "/media/ml-dashboard/ML_dashboard.mp4"
+                        ]
+                }
+        },
+        {
+                "slug": "diffusion-assisted-3d-painting",
+                "title": "A Novel Approach to 3D Modeling: Paint Detailed 3D Objects with Image/Text Diffusion Models",
+                "category": [
+                        "GenAI",
+                        "CV"
+                ],
+                "one_liner": "3D creation workflow combining diffusion guidance and modern 3D representations for textured outputs.",
+                "problem": "Creating detailed textured 3D assets is slow; users want guided creation from text/images.",
+                "approach": [
+                        "Used diffusion guidance (ControlNet/LoRA) for detail generation",
+                        "Explored NeRF/Instant-NGP/Gaussian Splatting for 3D representation",
+                        "Integrated pipeline into an API/UI prototype"
+                ],
+                "results": [
+                        "Faster ideation for 3D assets",
+                        "Pipeline-ready components for experimentation"
+                ],
+                "tech": [
+                        "Stable Diffusion",
+                        "Diffusers",
+                        "ControlNet",
+                        "LoRA",
+                        "DreamFusion (SDS)",
+                        "NeRF/Instant-NGP",
+                        "Gaussian Splatting",
+                        "Zero-1-to-3",
+                        "Shap-E",
+                        "TripoSR",
+                        "PyTorch3D",
+                        "Open3D",
+                        "Blender",
+                        "trimesh",
+                        "CUDA",
+                        "ONNX",
+                        "TensorRT",
+                        "Three.js",
+                        "WebGL/WebGPU",
+                        "FastAPI",
+                        "Gradio"
+                ],
+                "media": {
+                        "cover": "media/3d-diffusion/cover.png",
+                        "images": ["/media/3d-diffusion/1.png"],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "3d-object-alignment-teeth",
+                "title": "3D Object Alignment on Teeth Structure",
+                "category": [
+                        "CV",
+                        "ML"
+                ],
+                "one_liner": "Robust 3D registration of dental structures using point clouds + coarse-to-fine alignment.",
+                "problem": "Accurate alignment is required for dental analysis and planning workflows.",
+                "approach": [
+                        "Preprocessed meshes/point clouds (STL/PLY/OBJ/DICOM)",
+                        "Applied RANSAC/FGR/ICP variants for coarse-to-fine alignment",
+                        "Optimized for stability across noisy scans"
+                ],
+                "results": [
+                        "Improved alignment robustness",
+                        "Reusable tooling for 3D workflows"
+                ],
+                "tech": [
+                        "Open3D",
+                        "PCL",
+                        "VTK/ITK (SimpleITK)",
+                        "PyTorch3D",
+                        "PointNet++",
+                        "KPConv",
+                        "MinkowskiEngine",
+                        "RANSAC/FGR/ICP (Go-ICP)",
+                        "elastix/ANTs",
+                        "DICOM",
+                        "NumPy/SciPy",
+                        "3D Slicer",
+                        "Blender",
+                        "Three.js",
+                        "FastAPI",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/cover.png",
+                        "images": [],
+                        "videos": [
+                                "/media/teeth-alignment/alignment.mp4"
+                        ]
+                }
+        },
+        {
+                "slug": "rope-skipping-assistant-pose-estimation",
+                "title": "Rope Skipping Assistant using Human Pose Estimation & Surfing",
+                "category": [
+                        "CV",
+                        "ML"
+                ],
+                "one_liner": "Pose-based coaching with real-time inference, smoothing, and feedback over WebSockets.",
+                "problem": "Users want real-time technique feedback for training without a coach.",
+                "approach": [
+                        "Implemented pose estimation with multiple model options",
+                        "Added filtering (Kalman/Butterworth) for stable joint trajectories",
+                        "Delivered live feedback via WebSockets + backend API"
+                ],
+                "results": [
+                        "Smoother pose tracking",
+                        "Real-time feedback loop suitable for apps"
+                ],
+                "tech": [
+                        "MediaPipe BlazePose",
+                        "OpenPose",
+                        "MoveNet",
+                        "YOLOv8-Pose",
+                        "AlphaPose",
+                        "PyTorch",
+                        "TensorFlow",
+                        "OpenCV",
+                        "ONNX Runtime",
+                        "TensorRT",
+                        "CUDA",
+                        "NumPy/SciPy",
+                        "Kalman filter",
+                        "Butterworth filtering",
+                        "FastAPI",
+                        "WebSockets",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/cover.png",
+                        "images": [],
+                        "videos": ["/media/robe-skipping/13.mp4", "/media/robe-skipping/14.mp4"]
+                }
+        },
+        {
+                "slug": "cv-jd-similarity",
+                "title": "CV Similarity with Job Description",
+                "category": [
+                        "NLP",
+                        "ML"
+                ],
+                "one_liner": "NLP matching system to score CV–JD fit using transformers, embeddings, and ranking features.",
+                "problem": "Applicants and recruiters need explainable CV–JD alignment scoring.",
+                "approach": [
+                        "Extracted skills/keywords with NLP pipelines",
+                        "Computed semantic similarity with sentence transformers/embeddings",
+                        "Added scoring calibration and missing-skill suggestions"
+                ],
+                "results": [
+                        "More consistent similarity scores",
+                        "Actionable skill gap insights"
+                ],
+                "tech": [
+                        "spaCy",
+                        "NLTK",
+                        "Hugging Face Transformers",
+                        "BERT",
+                        "RoBERTa",
+                        "Sentence-BERT",
+                        "OpenAI Embeddings",
+                        "FAISS",
+                        "Pinecone",
+                        "ChromaDB",
+                        "LangChain",
+                        "scikit-learn",
+                        "XGBoost",
+                        "FastAPI",
+                        "Flask",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/cv-jd-similarity/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        },
+        {
+                "slug": "german-invoice-data-extraction",
+                "title": "German Invoice Data Extraction",
+                "category": [
+                        "CV",
+                        "NLP"
+                ],
+                "one_liner": "Invoice extraction pipeline using OCR + layout-aware models with optional UI review.",
+                "problem": "Invoices vary widely; extraction must handle layout changes and multilingual text reliably.",
+                "approach": [
+                        "OCR baseline with multiple engines for robustness",
+                        "Layout-aware extraction using transformer-based document models",
+                        "Post-processing + validation for structured outputs"
+                ],
+                "results": [
+                        "Higher-quality invoice fields",
+                        "Reduced critical extraction errors"
+                ],
+                "tech": [
+                        "Tesseract OCR",
+                        "PaddleOCR",
+                        "LayoutLMv2",
+                        "Donut",
+                        "Hugging Face Transformers",
+                        "PyTorch",
+                        "OpenCV",
+                        "Regex",
+                        "spaCy",
+                        "pandas",
+                        "NumPy",
+                        "FastAPI",
+                        "Flask",
+                        "React",
+                        "Tailwind CSS",
+                        "Docker"
+                ],
+                "media": {
+                        "cover": "/media/german-invoice/cover.png",
+                        "images": [],
+                        "videos": []
+                }
+        }
+]
