@@ -61,7 +61,7 @@
                 "media": {
                         "cover": "media/text-rag/cover.png",
                         "images": [],
-                        "videos": [
+                        "videos": ["media/text-rag/medical_rag.mp4"
                         ]
                 }
         },
