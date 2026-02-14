@@ -1,0 +1,122 @@
+---
+import projects from "../../data/projects.json";
+
+export function getStaticPaths() {
+  return projects.map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const project = projects.find((p) => p.slug === slug);
+if (!project) throw new Error(`Project not found: ${slug}`);
+
+/** Ensure BASE_URL ends with a trailing slash */
+const baseRaw = import.meta.env.BASE_URL || "/";
+const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`;
+
+const coverSrc = `${base}${project.media.cover}`;
+const videos = project.media?.videos ?? [];
+const images = project.media?.images ?? [];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{project.title}</title>
+    <style>
+      body { font-family: system-ui; padding: 24px; max-width: 900px; margin: 0 auto; }
+      .back { display: inline-block; margin-bottom: 16px; text-decoration: none; border: 1px solid #444; padding: 8px 12px; border-radius: 999px; }
+
+      /* Cover BELOW title and NOT cropped */
+      .cover {
+        width: 100%;
+        height: 380px;        /* adjust if you want */
+        object-fit: contain;  /* show full image */
+        background: #111;     /* letterbox background */
+        border-radius: 16px;
+        border: 1px solid #333;
+        display: block;
+        margin: 12px 0 10px;
+      }
+
+      .chips { margin: 12px 0; display: flex; gap: 8px; flex-wrap: wrap; }
+      .chip { border: 1px solid #444; border-radius: 999px; padding: 6px 10px; font-size: 12px; opacity: 0.9; }
+
+      ul { padding-left: 18px; line-height: 1.55; }
+
+      /* Multiple videos and not huge */
+      .video {
+        width: 100%;
+        max-height: 520px;
+        border-radius: 16px;
+        border: 1px solid #333;
+        background: #111;
+        margin-top: 12px;
+      }
+
+      /* Optional screenshots (if you add images later) */
+      .shotGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 12px; }
+      .shot {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+        background: #111;
+        border: 1px solid #333;
+        border-radius: 14px;
+        display: block;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body { background:#0b0b0f; color:#f2f2f2; }
+        .back, .chip { border-color:#666; }
+        .cover, .video, .shot { border-color:#444; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="back" href={`${base}projects`}>← Back to Projects</a>
+
+    <h1>{project.title}</h1>
+    <p>{project.one_liner}</p>
+
+    <img class="cover" src={coverSrc} alt={project.title} />
+
+    <h2>Categories</h2>
+    <div class="chips">
+      {(project.category ?? []).map((c) => <span class="chip">{c}</span>)}
+    </div>
+
+    <h2>Tech Used</h2>
+    <div class="chips">
+      {(project.tech ?? []).map((t) => <span class="chip">{t}</span>)}
+    </div>
+
+    <h2>Problem</h2>
+    <p>{project.problem}</p>
+
+    <h2>Approach</h2>
+    <ul>
+      {(project.approach ?? []).map((a) => <li>{a}</li>)}
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+      {(project.results ?? []).map((r) => <li>{r}</li>)}
+    </ul>
+
+    {videos.length > 0 && <h2>Demo Videos</h2>}
+    {videos.map((v) => (
+      <video class="video" controls preload="metadata" src={`${base}${v}`}></video>
+    ))}
+
+    {images.length > 0 && <h2>Screenshots</h2>}
+    {images.length > 0 && (
+      <div class="shotGrid">
+        {images.map((img) => (
+          <img class="shot" src={`${base}${img}`} alt={`${project.title} screenshot`} loading="lazy" />
+        ))}
+      </div>
+    )}
+  </body>
+</html>

@@ -27,7 +27,7 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/video-rag/cover.png",
+                        "cover": "media/video-rag/cover.png",
                         "images": [],
                         "videos": []
                 }
@@ -59,7 +59,7 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/text-rag/cover.png",
+                        "cover": "media/text-rag/cover.png",
                         "images": [],
                         "videos": [
                         ]
@@ -93,7 +93,7 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/stock-rag/cover.png",
+                        "cover": "media/stock-rag/cover.png",
                         "images": [],
                         "videos": []
                 }
@@ -127,7 +127,7 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/document-ai/cover.png",
+                        "cover": "media/document-ai/cover.png",
                         "images": [],
                         "videos": []
                 }
@@ -161,9 +161,9 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/custom-llm/cover.png",
+                        "cover": "media/text-gen-ui/cover.png",
                         "images": [],
-                        "videos": [ "/media/text-gen-ui/student_portal.mp4" ]
+                        "videos": [ "media/text-gen-ui/student_portal.mp4" ]
                 }
         },
         {
@@ -193,7 +193,7 @@
                         "LLM"
                 ],
                 "media": {
-                        "cover": "/media/n8n/cover.png",
+                        "cover": "media/n8n/cover.png",
                         "images": [],
                         "videos": []
                 }
@@ -227,10 +227,10 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/yolo-seg/cover.png",
+                        "cover": "media/yolo-seg/cover.png",
                         "images": [],
                         "videos": [
-                                "/media/yolo-seg/nail_segmentation.mp4"
+                                "media/yolo-seg/nail_segmentation.mp4"
                         ]
                 }
         },
@@ -262,7 +262,7 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/sd-art/cover.png",
+                        "cover": "media/sd-art/cover.png",
                         "images": [],
                         "videos": []
                 }
@@ -294,7 +294,7 @@
                         "FastAPI"
                 ],
                 "media": {
-                        "cover": "/media/text-search-image/cover.png",
+                        "cover": "media/text-search-image/cover.png",
                         "images": [],
                         "videos": []
                 }
@@ -328,11 +328,11 @@
                         "REST APIs"
                 ],
                 "media": {
-                        "cover": "/media/flutter-ai/cover.png",
+                        "cover": "media/flutter-ai/cover.png",
                         "images": [],
                         "videos": [
-                                "/media/flutter-ai/flutter_app.mp4",
-                                "/media/flutter-ai/dog_app.mp4"
+                                "media/flutter-ai/flutter_app.mp4",
+                                "media/flutter-ai/dog_app.mp4"
                         ]
                 }
         },
@@ -365,10 +365,10 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/cover.png",
+                        "cover": "media/address-extraction/cover.png",
                         "images": [],
                         "videos": [
-                                "/media/address-extraction/address-extraction.mp4"
+                                "media/address-extraction/address-extraction.mp4"
                         ]
                 }
         },
@@ -404,12 +404,12 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/yolo-detect/cover.png",
+                        "cover": "media/yolo-detect/cover.png",
                         "images": [],
                         "videos": [
-                                "/media/yolo-detect/detection.mp4",
-                                "/media/yolo-detect/vehicle_detection.mp4",
-                                "/media/yolo-detect/traffic_light_detection.mp4"
+                                "media/yolo-detect/detection.mp4",
+                                "media/yolo-detect/vehicle_detection.mp4",
+                                "media/yolo-detect/traffic_light_detection.mp4"
                         ]
                 }
         },
@@ -453,10 +453,10 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/ml-dashboard/cover.png",
+                        "cover": "media/ml-dashboard/cover.png",
                         "images": [],
                         "videos": [
-                                "/media/ml-dashboard/ML_dashboard.mp4"
+                                "media/ml-dashboard/ML_dashboard.mp4"
                         ]
                 }
         },
@@ -503,7 +503,7 @@
                 ],
                 "media": {
                         "cover": "media/3d-diffusion/cover.png",
-                        "images": ["/media/3d-diffusion/1.png"],
+                        "images": ["media/3d-diffusion/1.png"],
                         "videos": []
                 }
         },
@@ -544,10 +544,10 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/cover.png",
+                        "cover": "media/teeth-alignment/cover.png",
                         "images": [],
                         "videos": [
-                                "/media/teeth-alignment/alignment.mp4"
+                                "media/teeth-alignment/alignment.mp4"
                         ]
                 }
         },
@@ -589,9 +589,9 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/cover.png",
+                        "cover": "media/rope-skipping/cover.png",
                         "images": [],
-                        "videos": ["/media/robe-skipping/13.mp4", "/media/robe-skipping/14.mp4"]
+                        "videos": ["media/rope-skipping/14.mp4"]
                 }
         },
         {
@@ -631,7 +631,7 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/cv-jd-similarity/cover.png",
+                        "cover": "media/cv-jd-similarity/cover.png",
                         "images": [],
                         "videos": []
                 }
@@ -673,7 +673,7 @@
                         "Docker"
                 ],
                 "media": {
-                        "cover": "/media/german-invoice/cover.png",
+                        "cover": "media/german-invoice/cover.png",
                         "images": [],
                         "videos": []
                 }
