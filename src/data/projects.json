@@ -553,7 +553,7 @@
         },
         {
                 "slug": "rope-skipping-assistant-pose-estimation",
-                "title": "Rope Skipping Assistant using Human Pose Estimation & Surfing",
+                "title": "Human Pose Estimation for Rope Skipping Assistant & Surfing",
                 "category": [
                         "CV",
                         "ML"
