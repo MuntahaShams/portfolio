@@ -691,4 +691,41 @@
                         "videos": []
                 }
         }
+        {
+                "slug": "diabetic-retinopathy-detection",
+                "title": "Diabetic Retinopathy Detection",
+                "category": [
+                        "CV",
+                        "Deep Learning"
+                ],
+                "one_liner": "Automated diabetic retinopathy screening from retinal fundus images using CNNs and transfer learning.",
+                "problem": "Early DR detection is critical but manual grading is time-consuming and requires expertise; models must handle class imbalance, varied image quality, and device differences.",
+                "approach": [
+                        "Data preprocessing: resizing, normalization, contrast enhancement, and augmentation to improve robustness",
+                        "Modeling with CNN baselines and transfer learning (AlexNet, GoogLeNet, ResNet) with fine-tuning",
+                        "Training strategy: class-balancing, threshold tuning, and validation with standard classification metrics"
+                ],
+                "results": [
+                        "Reliable DR classification performance with transfer learning",
+                        "Improved generalization via preprocessing + augmentation",
+                        "Reduced misclassification on challenging low-quality samples"
+                ],
+                "tech": [
+                        "CNN",
+                        "AlexNet",
+                        "GoogLeNet",
+                        "ResNet",
+                        "Fine-tuning",
+                        "Data processing",
+                        "Git",
+                        "firebase authentication",
+                        "FastAPI",
+                        "HTML/CSS"
+                ],
+                "media": {
+                        "cover": "media/diabetic-retinopathy/cover.png",
+                        "images": [],
+                        "videos": ["media/diabetic-retinopathy/detection.mp4"]
+                }
+        }
 ]
