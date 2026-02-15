@@ -19,8 +19,10 @@
                 ],
                 "tech": [
                         "Python",
+                        "Video data processing",
                         "Embeddings",
                         "Vector DB",
+                        "PostgreSQL",
                         "RAG",
                         "LLM",
                         "FastAPI",
@@ -53,10 +55,15 @@
                 "tech": [
                         "Python",
                         "Embeddings",
+                        "Vector DB",
+                        "PostgreSQL",
+                        "Pinecone",
                         "RAG",
                         "LLM",
-                        "FastAPI",
-                        "Docker"
+                        "FlaskAPI",
+                        "Docker",
+                        "GCP",
+                        "Streamlit"
                 ],
                 "media": {
                         "cover": "media/text-rag/cover.png",
@@ -86,11 +93,15 @@
                 ],
                 "tech": [
                         "Python",
-                        "PostgreSQL",
+                        "Vector DB",
                         "RAG",
+                        "LangChain",
+                        "PostgreSQL",
                         "LLM",
                         "FastAPI",
-                        "Docker"
+                        "Docker",
+                        "AWS",
+                        "Streamlit"
                 ],
                 "media": {
                         "cover": "media/stock-rag/cover.png",
@@ -119,6 +130,8 @@
                 "tech": [
                         "Python",
                         "OCR",
+                        "GCP",
+                        "fine-tuning",
                         "OpenCV",
                         "Regex",
                         "spaCy",
@@ -155,10 +168,18 @@
                         "LLM",
                         "RAG",
                         "Embeddings",
+                        "PostgreSQL",
+                        "ChromaDB",
+                        "Gemini",
                         "FastAPI",
-                        "Flask/React",
+                        "Flask",
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
                         "Tailwind CSS",
-                        "Docker"
+                        "Docker",
+                        "AWS"
+
                 ],
                 "media": {
                         "cover": "media/text-gen-ui/cover.png",
@@ -219,6 +240,8 @@
                 "tech": [
                         "YOLOv8",
                         "PyTorch",
+                        "segmentation models",
+                        "fine-tuning",
                         "OpenCV",
                         "Ultralytics",
                         "ONNX",
@@ -255,6 +278,7 @@
                 "tech": [
                         "Stable Diffusion",
                         "Diffusers",
+                        "fine-tuning",
                         "LoRA",
                         "PyTorch",
                         "CUDA",
@@ -303,9 +327,7 @@
                 "slug": "flutter-app-ai-backend",
                 "title": "Flutter App with AI Backend",
                 "category": [
-                        "ML",
-                        "NLP",
-                        "GenAI"
+                        "CV"
                 ],
                 "one_liner": "Flutter mobile app connected to an AI backend for inference and automation.",
                 "problem": "Deliver AI features to end users with a clean mobile UX and scalable backend.",
@@ -320,9 +342,10 @@
                 ],
                 "tech": [
                         "Flutter",
-                        "Dart",
                         "FastAPI",
                         "Python",
+                        "CNN",
+                        "deep learning",
                         "Docker",
                         "PostgreSQL",
                         "REST APIs"
@@ -357,12 +380,13 @@
                 "tech": [
                         "Python",
                         "OCR",
-                        "OpenCV",
-                        "spaCy",
-                        "Regex",
-                        "FastAPI/Flask",
-                        "Tailwind CSS",
-                        "Docker"
+                        "OpenAI",
+                        "Vision API",
+                        "FlaskAPI",
+                        "HTML",
+                        "CSS",
+                        "Docker",
+                        "AWS"
                 ],
                 "media": {
                         "cover": "media/address-extraction/cover.png",
@@ -394,6 +418,7 @@
                         "YOLOv8",
                         "PyTorch",
                         "OpenCV",
+                        "fine-tuning",
                         "Ultralytics",
                         "TensorRT",
                         "ONNX",
@@ -434,7 +459,9 @@
                         "Unsupervised Learning",
                         "scikit-learn",
                         "XGBoost",
-                        "LightGBM",
+                        "LSTMs",
+                        "forcasting models",
+                        "fine-tuning",
                         "TensorFlow",
                         "PyTorch",
                         "pandas",
@@ -442,14 +469,11 @@
                         "FastAPI",
                         "Flask",
                         "REST APIs",
-                        "Plotly",
+                        "Matplotlib/Seaborn",
                         "HTML",
                         "CSS",
                         "JavaScript",
-                        "Bootstrap",
-                        "Tailwind CSS",
                         "PostgreSQL",
-                        "SQLite",
                         "Docker"
                 ],
                 "media": {
@@ -485,9 +509,7 @@
                         "LoRA",
                         "DreamFusion (SDS)",
                         "NeRF/Instant-NGP",
-                        "Gaussian Splatting",
-                        "Zero-1-to-3",
-                        "Shap-E",
+                        "Hugging Face Transformers",
                         "TripoSR",
                         "PyTorch3D",
                         "Open3D",
@@ -526,16 +548,9 @@
                         "Reusable tooling for 3D workflows"
                 ],
                 "tech": [
-                        "Open3D",
-                        "PCL",
-                        "VTK/ITK (SimpleITK)",
+                        "Open3D",      
                         "PyTorch3D",
                         "PointNet++",
-                        "KPConv",
-                        "MinkowskiEngine",
-                        "RANSAC/FGR/ICP (Go-ICP)",
-                        "elastix/ANTs",
-                        "DICOM",
                         "NumPy/SciPy",
                         "3D Slicer",
                         "Blender",
@@ -570,11 +585,10 @@
                         "Real-time feedback loop suitable for apps"
                 ],
                 "tech": [
-                        "MediaPipe BlazePose",
-                        "OpenPose",
-                        "MoveNet",
+                        "MediaPipe Pose",
+                        "openPose",
+                        "RTMO",
                         "YOLOv8-Pose",
-                        "AlphaPose",
                         "PyTorch",
                         "TensorFlow",
                         "OpenCV",
@@ -582,11 +596,11 @@
                         "TensorRT",
                         "CUDA",
                         "NumPy/SciPy",
-                        "Kalman filter",
-                        "Butterworth filtering",
                         "FastAPI",
-                        "WebSockets",
-                        "Docker"
+                        "AWS",
+                        "Docker",
+                        "GitHub",
+                        "poetry"
                 ],
                 "media": {
                         "cover": "media/rope-skipping/cover.png",
@@ -628,7 +642,8 @@
                         "XGBoost",
                         "FastAPI",
                         "Flask",
-                        "Docker"
+                        "Docker",
+                        "AWS"
                 ],
                 "media": {
                         "cover": "media/cv-jd-similarity/cover.png",
@@ -657,8 +672,6 @@
                 "tech": [
                         "Tesseract OCR",
                         "PaddleOCR",
-                        "LayoutLMv2",
-                        "Donut",
                         "Hugging Face Transformers",
                         "PyTorch",
                         "OpenCV",
@@ -668,8 +681,8 @@
                         "NumPy",
                         "FastAPI",
                         "Flask",
-                        "React",
-                        "Tailwind CSS",
+                        "Streamlit",
+                        "CSS",
                         "Docker"
                 ],
                 "media": {
