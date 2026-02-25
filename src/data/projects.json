@@ -567,28 +567,35 @@
                 }
         },
         {
-                "slug": "rope-skipping-assistant-pose-estimation",
-                "title": "Human Pose Estimation for Rope Skipping Assistant & Surfing",
+
+                "slug": "surfing-pose-maneuver-classification",
+                "title": "Surfing Pose Estimation & Maneuver Classification",
                 "category": [
                         "CV",
                         "ML"
                 ],
-                "one_liner": "Pose-based coaching with real-time inference, smoothing, and feedback over WebSockets.",
-                "problem": "Users want real-time technique feedback for training without a coach.",
+                "one_liner": "Surfing analytics with robust pose tracking (YOLOPose/RTMO) and sequence-based maneuver classification (TCN/PosFormer).",
+                "problem": "Surfers and coaches need fast, objective feedback on maneuver execution and technique without manual video review, even in challenging surf conditions (spray, occlusions, moving cameras).",
                 "approach": [
-                        "Implemented pose estimation with multiple model options",
-                        "Added filtering (Kalman/Butterworth) for stable joint trajectories",
-                        "Delivered live feedback via WebSockets + backend API"
+                        "Implemented multi-backend pose estimation with YOLOPose and RTMO for resilient keypoint tracking in real surf footage",
+                        "Stabilized joint trajectories using temporal filtering (Kalman/Butterworth) to reduce jitter and improve downstream recognition",
+                        "Built a temporal maneuver classifier using TCN and PosFormer to model motion dynamics across frames and detect maneuvers (e.g., bottom turn, top turn, cutback, snap)",
+                        "Designed a feature pipeline from pose sequences (joint angles, stance geometry, rotation cues, velocity/acceleration) to support robust classification and segmentation",
+                        "Deployed real-time inference with streaming video input and low-latency feedback via WebSockets and a backend API"
                 ],
                 "results": [
-                        "Smoother pose tracking",
-                        "Real-time feedback loop suitable for apps"
+                        "Stable pose tracking under occlusions, water spray, and rapid camera motion",
+                        "Accurate maneuver segmentation and classification using TCN/PosFormer temporal modeling",
+                        "Real-time coaching feedback loop ready for integration into training apps"
                 ],
+
                 "tech": [
                         "MediaPipe Pose",
                         "openPose",
                         "RTMO",
                         "YOLOv8-Pose",
+                        "deep learning",
+                        "classification models",
                         "PyTorch",
                         "TensorFlow",
                         "OpenCV",
@@ -603,9 +610,9 @@
                         "poetry"
                 ],
                 "media": {
-                        "cover": "media/rope-skipping/cover.png",
+                        "cover": "media/pose_estimation/cover.png",
                         "images": [],
-                        "videos": ["media/rope-skipping/14.mp4"]
+                        "videos": ["media/pose_estimation/surfing.mp4"]
                 }
         },
         {
