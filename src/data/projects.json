@@ -6,16 +6,16 @@
       "CV",
       "NLP"
     ],
-    "one_liner": "Extract structured invoice fields from German-language documents using OCR, layout-aware modeling, and validation.",
-    "problem": "Invoice formats vary across vendors and layouts, making reliable field extraction difficult for finance and operations workflows.",
+    "one_liner": "Turn German invoices into structured, validation-ready data using OCR, layout-aware extraction, and API-friendly outputs.",
+    "problem": "Finance and operations teams receive invoices in many layouts and scan qualities, making manual field extraction slow, inconsistent, and difficult to automate.",
     "approach": [
-      "Built an OCR baseline with multiple engines for robust text capture",
-      "Used layout-aware document modeling and post-processing for structured field extraction",
-      "Added validation logic to improve export quality and reduce downstream errors"
+      "Built a robust OCR pipeline to capture invoice text across varied document quality",
+      "Combined layout-aware document modeling with field-level post-processing for structured extraction",
+      "Added validation logic and export-ready outputs for downstream systems and review workflows"
     ],
     "results": [
-      "More reliable invoice-field extraction across varied layouts",
-      "Cleaner structured outputs for automation and review"
+      "Reliable extraction workflow for key invoice fields across changing layouts",
+      "Cleaner structured data for finance automation, dashboards, and human review"
     ],
     "tech": [
       "Tesseract OCR",
@@ -46,16 +46,16 @@
       "CV",
       "NLP"
     ],
-    "one_liner": "Convert PDFs and scanned documents into validated structured outputs for downstream automation.",
-    "problem": "Teams need to extract accurate fields from diverse document templates without building a manual process for every format.",
+    "one_liner": "Extract business-critical fields from PDFs and scans, then convert them into structured outputs ready for automation.",
+    "problem": "Organizations often handle documents with inconsistent templates, which makes manual extraction expensive and rule-only systems difficult to maintain.",
     "approach": [
-      "Combined OCR, layout parsing, and field-detection logic",
-      "Applied rules plus ML/NLP methods for structured extraction",
-      "Added validation and JSON/CSV export for production workflows"
+      "Combined OCR, layout parsing, and field-detection logic into a reusable extraction pipeline",
+      "Applied rule-based and ML/NLP methods where each was most effective",
+      "Produced validated JSON/CSV outputs designed for APIs, analytics, and internal tools"
     ],
     "results": [
-      "Robust extraction across document variants",
-      "Cleaner handoff into analytics, APIs, and internal tools"
+      "Flexible document extraction workflow across multiple template variants",
+      "Reduced friction when integrating document data into downstream products"
     ],
     "tech": [
       "Python",
@@ -82,16 +82,16 @@
       "GenAI",
       "NLP"
     ],
-    "one_liner": "Answer questions over private documents with retrieval-grounded responses and a clean user experience.",
-    "problem": "Users need trustworthy answers from internal documents without manually searching long PDFs or relying on unsupported model guesses.",
+    "one_liner": "Build document Q&A systems that retrieve relevant context first and generate answers grounded in source material.",
+    "problem": "Teams need reliable access to internal knowledge, but plain LLM chat can return unsupported answers or miss document-specific context.",
     "approach": [
-      "Designed chunking and metadata strategy for document retrieval",
-      "Implemented retrieval with context constraints to support grounded answers",
-      "Added response formatting and safety checks for clearer UX"
+      "Designed chunking, metadata, and retrieval strategies for private document collections",
+      "Constrained answer generation around retrieved context to improve grounding",
+      "Added user-facing formatting and guardrails for clearer, more trustworthy responses"
     ],
     "results": [
-      "More reliable document Q&A",
-      "Reusable RAG template for new knowledge bases"
+      "Reusable RAG architecture for document assistants and internal knowledge bots",
+      "More transparent answers supported by relevant retrieved context"
     ],
     "tech": [
       "Python",
@@ -121,16 +121,16 @@
       "GenAI",
       "NLP"
     ],
-    "one_liner": "Search and answer over long videos using transcript extraction, segment retrieval, and LLM synthesis.",
-    "problem": "Users need to find relevant answers inside long recordings without manually reviewing entire videos.",
+    "one_liner": "Make long videos searchable by turning transcripts and segments into a retrieval-powered Q&A experience.",
+    "problem": "Finding specific information in lectures, meetings, or long recordings is time-consuming when users must scrub through the full video manually.",
     "approach": [
-      "Extracted transcripts and meaningful video segments",
-      "Indexed content with embeddings for retrieval",
-      "Generated grounded answers tied to the most relevant segments"
+      "Extracted transcripts and organized video content into semantically meaningful segments",
+      "Indexed segment-level text with embeddings to support accurate retrieval",
+      "Generated answers from the most relevant retrieved moments instead of the full recording"
     ],
     "results": [
-      "Searchable video knowledge base",
-      "Faster access to answers inside long-form content"
+      "Searchable video knowledge base for long-form content",
+      "Faster access to relevant moments and answers inside recordings"
     ],
     "tech": [
       "Python",
@@ -156,16 +156,16 @@
       "GenAI",
       "NLP"
     ],
-    "one_liner": "Generate domain-specific content from connected data sources with templates, controls, and review workflows.",
-    "problem": "Teams need consistent AI-generated content that stays aligned with their internal data and business rules.",
+    "one_liner": "Generate domain-specific content from connected knowledge sources through a controllable, review-friendly LLM interface.",
+    "problem": "Business users need AI-generated text that reflects their own data, follows constraints, and remains easy to review before publishing or sharing.",
     "approach": [
-      "Integrated retrieval and grounding against custom knowledge sources",
-      "Added templates, tone controls, and guardrails",
-      "Built a UI for drafting, reviewing, and exporting outputs"
+      "Grounded generation with retrieval from custom knowledge sources and structured context",
+      "Added templates, tone controls, and guardrails to shape the generated output",
+      "Built a user interface for drafting, reviewing, and exporting content"
     ],
     "results": [
-      "More consistent domain-aware generations",
-      "Usable workflow for non-technical stakeholders"
+      "More consistent, context-aware text generation for real workflows",
+      "Accessible content-generation experience for non-technical users"
     ],
     "tech": [
       "Python",
@@ -199,16 +199,16 @@
       "GenAI",
       "CV"
     ],
-    "one_liner": "Train a LoRA-based character adaptation workflow to preserve identity and visual consistency across generated scenes.",
-    "problem": "Creative projects need recurring characters to stay visually consistent across prompts, poses, and scenes.",
+    "one_liner": "Train a LoRA-based image generation workflow that preserves a character’s identity across prompts, poses, and scenes.",
+    "problem": "Creative teams often need the same character to appear consistently across multiple images, but default image generation can drift in facial features, clothing, and styling.",
     "approach": [
-      "Prepared a focused character dataset for adaptation",
-      "Fine-tuned a Stable Diffusion workflow with LoRA for identity retention",
-      "Designed prompt and sampling practices to improve consistency across outputs"
+      "Prepared a focused character dataset for Stable Diffusion adaptation",
+      "Fine-tuned a LoRA workflow to improve identity retention and visual repeatability",
+      "Refined prompts and sampling settings to support consistency across different scene concepts"
     ],
     "results": [
-      "More repeatable character appearance across generations",
-      "Reusable workflow for storytelling, branding, and creative asset production"
+      "More stable recurring-character generation for storytelling and branded visuals",
+      "Reusable workflow for character-focused creative production"
     ],
     "tech": [
       "Stable Diffusion",
@@ -230,16 +230,16 @@
       "NLP",
       "ML"
     ],
-    "one_liner": "Score CV–JD fit using transformer embeddings, ranking features, and explainable skill-gap insights.",
-    "problem": "Applicants and recruiters need a more consistent way to assess alignment between resumes and job descriptions.",
+    "one_liner": "Match CVs to job descriptions with semantic similarity, ranking features, and explainable skill-gap insights.",
+    "problem": "Recruiters and applicants need a faster way to evaluate role fit than manual keyword matching, especially when equivalent skills are phrased differently.",
     "approach": [
-      "Extracted skills and keywords with NLP pipelines",
-      "Computed semantic similarity using transformer-based embeddings",
-      "Added ranking calibration and missing-skill suggestions"
+      "Extracted role-relevant terms, skills, and text signals with NLP pipelines",
+      "Computed semantic alignment using transformer embeddings and similarity methods",
+      "Added scoring logic and missing-skill feedback to make results more actionable"
     ],
     "results": [
-      "More consistent similarity scores",
-      "Actionable insights for candidate-job alignment"
+      "More informative CV–JD matching than keyword overlap alone",
+      "Actionable fit summaries that support screening and candidate improvement"
     ],
     "tech": [
       "spaCy",
@@ -273,16 +273,16 @@
       "CV",
       "NLP"
     ],
-    "one_liner": "Extract and review address fields from scanned documents with correction workflows and export-ready outputs.",
-    "problem": "Address blocks in scans are noisy and inconsistent, causing failures in shipping, billing, and back-office workflows.",
+    "one_liner": "Extract address fields from scanned documents and route them through a review UI before export.",
+    "problem": "Address blocks can be fragmented, noisy, or inconsistently formatted in real documents, creating errors in billing, shipping, and back-office workflows.",
     "approach": [
-      "Used OCR and layout heuristics to locate address regions",
-      "Parsed structured components with NER/rule-based logic",
-      "Added a review UI for correction before export"
+      "Located candidate address regions using OCR and layout-aware heuristics",
+      "Structured components with NER- and rule-based parsing logic",
+      "Added a correction interface so users can review and fix uncertain outputs before export"
     ],
     "results": [
-      "More accurate structured address extraction",
-      "Human-in-the-loop workflow for production use"
+      "Practical extraction flow for messy address data in scanned documents",
+      "Human-in-the-loop review path for safer operational use"
     ],
     "tech": [
       "Python",
@@ -311,16 +311,16 @@
       "NLP",
       "ML"
     ],
-    "one_liner": "Query structured market data in natural language and return explainable, dashboard-ready outputs.",
-    "problem": "Non-technical users need easier access to market data without writing SQL or manually assembling reports.",
+    "one_liner": "Let users query structured financial data in natural language and receive clear, application-ready responses.",
+    "problem": "Business users often need insights from market data without writing SQL or manually translating questions into database operations.",
     "approach": [
-      "Stored structured market data in PostgreSQL",
-      "Combined retrieval with LLM reasoning where useful",
-      "Returned structured responses suitable for dashboards and applications"
+      "Stored market data in PostgreSQL and organized it for structured querying",
+      "Combined retrieval and LLM reasoning to interpret user questions where useful",
+      "Returned formatted responses designed for dashboards, APIs, and decision-support interfaces"
     ],
     "results": [
-      "Natural-language-to-insights workflow",
-      "Outputs ready for visual analytics and UI integration"
+      "Natural-language access layer for structured financial datasets",
+      "Reusable pattern for database-backed AI assistants"
     ],
     "tech": [
       "Python",
@@ -347,16 +347,16 @@
       "ML",
       "NLP"
     ],
-    "one_liner": "Automate ingestion, enrichment, storage, and notifications with n8n-backed AI workflows.",
-    "problem": "Teams need repeatable automations around AI tools without rebuilding glue code for every business workflow.",
+    "one_liner": "Design AI-powered business automations in n8n that connect triggers, APIs, databases, and LLM-based processing.",
+    "problem": "Clients need repeatable workflows for lead handling, content processing, notifications, and data enrichment without constantly building custom glue code.",
     "approach": [
-      "Designed trigger-based flows for ingest → process → store → notify",
-      "Integrated LLMs, APIs, databases, and webhooks",
-      "Added retries, logging, and failure handling"
+      "Built trigger-driven flows that ingest, process, store, and notify across connected systems",
+      "Integrated LLMs, APIs, webhooks, and databases into reusable automations",
+      "Added retries, logging, and failure-aware handling to make workflows easier to operate"
     ],
     "results": [
-      "Reduced manual operations work",
-      "Faster iteration on AI-assisted workflows"
+      "Reduced repetitive manual work in AI-assisted business processes",
+      "Client-friendly automation patterns that can be adapted across use cases"
     ],
     "tech": [
       "n8n",
@@ -379,19 +379,16 @@
       "CV",
       "ML"
     ],
-    "one_liner": "Analyze surf footage with resilient pose tracking and sequence-based maneuver classification.",
-    "problem": "Coaches and athletes need faster, more objective feedback from challenging real-world footage with motion, spray, and occlusions.",
+    "one_liner": "Analyze surfing videos with robust pose tracking and temporal maneuver recognition for coaching-style feedback.",
+    "problem": "Surf footage is difficult to analyze because of water spray, camera motion, occlusions, and fast athlete movement, yet coaches still need reliable feedback signals.",
     "approach": [
-      "Implemented multi-backend pose estimation with YOLOPose and RTMO",
-      "Smoothed trajectories with temporal filtering to reduce jitter",
-      "Built sequence models for maneuver recognition using TCN/PosFormer-style temporal modeling",
-      "Engineered features from joint angles, stance geometry, rotation cues, and motion dynamics",
-      "Deployed a real-time inference workflow with streaming feedback via backend APIs"
+      "Implemented multiple pose-estimation backends to improve keypoint tracking under difficult footage",
+      "Smoothed temporal trajectories and engineered motion features from joint geometry and movement cues",
+      "Built a sequence-modeling pipeline for maneuver recognition and real-time feedback delivery"
     ],
     "results": [
-      "More stable tracking under difficult video conditions",
-      "Maneuver segmentation and classification workflow",
-      "Real-time coaching feedback loop ready for product integration"
+      "More stable pose-based analysis in challenging sports video",
+      "Product-oriented foundation for maneuver detection and coaching feedback"
     ],
     "tech": [
       "MediaPipe Pose",
@@ -428,16 +425,16 @@
       "CV",
       "ML"
     ],
-    "one_liner": "Align dental 3D scans using point-cloud registration and coarse-to-fine matching.",
-    "problem": "Accurate alignment is essential for downstream dental analysis and planning workflows.",
+    "one_liner": "Align dental 3D scans through point-cloud registration and coarse-to-fine geometry matching.",
+    "problem": "Dental analysis workflows depend on precise 3D alignment, but noisy scans and imperfect geometry can make registration unreliable.",
     "approach": [
-      "Preprocessed meshes and point clouds from STL/PLY/OBJ/DICOM inputs",
-      "Applied RANSAC/FGR/ICP-style coarse-to-fine registration",
-      "Optimized for stability across noisy or imperfect scans"
+      "Prepared mesh and point-cloud inputs from common 3D and medical formats",
+      "Applied coarse-to-fine registration using RANSAC/FGR/ICP-style techniques",
+      "Focused on stability across imperfect scans and varied alignment conditions"
     ],
     "results": [
-      "More robust 3D alignment behavior",
-      "Reusable tooling for dental and 3D geometry workflows"
+      "Reusable 3D registration workflow for dental geometry tasks",
+      "More dependable preprocessing for downstream visualization and analysis"
     ],
     "tech": [
       "Open3D",
@@ -465,16 +462,16 @@
       "CV",
       "ML"
     ],
-    "one_liner": "Build low-latency object detection systems with YOLOv8 and deployment-friendly inference exports.",
-    "problem": "Real-time systems need accurate detection while staying fast enough for practical video workloads.",
+    "one_liner": "Develop real-time object detection pipelines with YOLOv8 and deployment-ready inference optimization.",
+    "problem": "Video applications need object detection that remains accurate while meeting latency and deployment constraints.",
     "approach": [
-      "Trained YOLOv8 with augmentation and evaluation loops",
-      "Optimized inference with ONNX/TensorRT/CUDA",
-      "Served the pipeline via APIs and containerized deployments"
+      "Trained YOLOv8 detection models with augmentation and iterative evaluation",
+      "Optimized inference using ONNX, TensorRT, and CUDA-oriented deployment paths",
+      "Served predictions through API-based workflows and containerized packaging"
     ],
     "results": [
-      "Low-latency detection workflow",
-      "Deployable artifacts for production-style use"
+      "Production-oriented object detection setup for real-time use cases",
+      "Deployment-friendly model artifacts and serving pattern"
     ],
     "tech": [
       "YOLOv8",
@@ -507,16 +504,16 @@
       "CV",
       "ML"
     ],
-    "one_liner": "Segment objects for measurement and inspection workflows using YOLO-based models and optimized inference exports.",
-    "problem": "Visual inspection tasks often require pixel-level understanding rather than only bounding boxes.",
+    "one_liner": "Build segmentation systems for visual inspection and measurement tasks using YOLO-based models.",
+    "problem": "Many industrial and inspection problems require pixel-level understanding rather than simple bounding-box detection.",
     "approach": [
-      "Trained a YOLO segmentation workflow with augmentation",
-      "Improved data quality and evaluated IoU, precision, and recall",
-      "Exported inference artifacts for faster deployment"
+      "Trained a YOLO segmentation workflow with augmentation and dataset quality improvements",
+      "Evaluated segmentation behavior with task-relevant metrics such as IoU, precision, and recall",
+      "Prepared optimized inference exports for practical deployment scenarios"
     ],
     "results": [
-      "Production-oriented segmentation workflow",
-      "Optimized inference path for downstream applications"
+      "Segmentation pipeline suited to inspection-style computer vision workflows",
+      "Optimized path from training to inference deployment"
     ],
     "tech": [
       "YOLOv8",
@@ -545,16 +542,16 @@
       "GenAI",
       "CV"
     ],
-    "one_liner": "Explore textured 3D asset creation by combining diffusion guidance with modern 3D representations.",
-    "problem": "Creating detailed 3D assets is slow and requires specialized workflows; guided generation can speed up ideation.",
+    "one_liner": "Explore diffusion-guided generation of textured 3D assets through modern image and 3D modeling techniques.",
+    "problem": "Creating detailed 3D assets is slow and specialized, while text- or image-guided generation can accelerate ideation and prototyping.",
     "approach": [
-      "Used diffusion guidance such as ControlNet/LoRA for detail generation",
-      "Explored NeRF, Instant-NGP, and Gaussian Splatting-style representations",
-      "Integrated pipeline components into an API/UI prototype"
+      "Used diffusion-based guidance methods such as ControlNet and LoRA for detail generation",
+      "Explored 3D representations and reconstruction approaches including NeRF-style and splatting-inspired workflows",
+      "Connected experimental components into prototype interfaces for testing end-to-end generation ideas"
     ],
     "results": [
-      "Faster ideation for textured 3D assets",
-      "Reusable experimental pipeline components"
+      "Research-oriented pipeline for faster 3D asset ideation",
+      "Reusable experimental foundation for generative 3D workflows"
     ],
     "tech": [
       "Stable Diffusion",
@@ -591,16 +588,16 @@
     "category": [
       "ML"
     ],
-    "one_liner": "Serve machine-learning predictions through APIs and visualize outputs in an interactive dashboard.",
-    "problem": "Stakeholders need model outputs that are accessible, understandable, and easy to compare.",
+    "one_liner": "Serve machine-learning predictions through APIs and make model outputs easier to interpret in an interactive dashboard.",
+    "problem": "Stakeholders often need prediction systems that are not only accurate, but also accessible, comparable, and easy to review.",
     "approach": [
-      "Trained and compared multiple ML model families",
-      "Built REST APIs for online and batch predictions",
-      "Created dashboard views for metrics and outputs"
+      "Trained and compared multiple machine-learning model families for prediction tasks",
+      "Built REST API endpoints for online and batch inference workflows",
+      "Created dashboard views for outputs, metrics, and model-facing interaction"
     ],
     "results": [
-      "Unified prediction and visualization workflow",
-      "Reusable ML service template"
+      "End-to-end path from model prediction to business-facing visualization",
+      "Reusable pattern for production-style ML demo applications"
     ],
     "tech": [
       "Unsupervised Learning",
@@ -638,16 +635,16 @@
       "CV",
       "Deep Learning"
     ],
-    "one_liner": "Classify retinal fundus images using CNNs and transfer learning for automated diabetic retinopathy screening.",
-    "problem": "Early diabetic retinopathy detection is important, but manual image grading is time-intensive and images vary in quality.",
+    "one_liner": "Classify retinal fundus images with CNNs and transfer learning to support diabetic retinopathy screening workflows.",
+    "problem": "Retinal image review is time-intensive, and real-world images vary in quality, contrast, and disease visibility.",
     "approach": [
-      "Applied preprocessing, normalization, contrast enhancement, and augmentation",
-      "Built CNN baselines and transfer-learning models with fine-tuning",
-      "Used class-balancing and threshold tuning with standard classification metrics"
+      "Applied preprocessing, contrast enhancement, and augmentation to improve input robustness",
+      "Built CNN and transfer-learning models with fine-tuning across established architectures",
+      "Used class-balancing and threshold-aware evaluation to support screening-oriented classification"
     ],
     "results": [
-      "Reliable screening-oriented classification workflow",
-      "Better robustness on challenging low-quality samples"
+      "Well-structured medical imaging classification pipeline",
+      "Stronger robustness for low-quality or visually challenging retinal samples"
     ],
     "tech": [
       "CNN",
