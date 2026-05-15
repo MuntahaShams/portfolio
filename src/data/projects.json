@@ -539,40 +539,6 @@
     }
   },
   {
-    "slug": "stable-diffusion-art-generation",
-    "title": "Stable Diffusion Style Fine-Tuning with LoRA",
-    "category": [
-      "GenAI",
-      "CV"
-    ],
-    "one_liner": "Fine-tune image generation toward a custom visual style using LoRA-based adaptation and controlled prompting.",
-    "problem": "Creative teams need visual outputs that stay closer to a target style than generic image generation can provide.",
-    "approach": [
-      "Prepared the training dataset and conditioning strategy",
-      "Fine-tuned the generation workflow with LoRA/DreamBooth-style methods",
-      "Created prompt presets and sampling configurations for repeatable outputs"
-    ],
-    "results": [
-      "More consistent custom-style generations",
-      "Reusable image-generation pipeline for creative workflows"
-    ],
-    "tech": [
-      "Stable Diffusion",
-      "Diffusers",
-      "fine-tuning",
-      "LoRA",
-      "PyTorch",
-      "CUDA",
-      "ONNX",
-      "Docker"
-    ],
-    "media": {
-      "cover": "media/sd-art/cover.png",
-      "images": [],
-      "videos": []
-    }
-  },
-  {
     "slug": "diffusion-assisted-3d-painting",
     "title": "Diffusion-Guided 3D Asset Generation",
     "category": [
@@ -620,38 +586,6 @@
     }
   },
   {
-    "slug": "text-search-on-image",
-    "title": "OCR Search Across Image Archives",
-    "category": [
-      "CV",
-      "NLP"
-    ],
-    "one_liner": "Search screenshots and scans by the text they contain using OCR, indexing, and visual highlighting.",
-    "problem": "Users need to retrieve visual documents by their hidden text without manually opening each image.",
-    "approach": [
-      "Ran OCR and normalized extracted text",
-      "Indexed content for keyword and semantic retrieval",
-      "Highlighted matched regions in the interface"
-    ],
-    "results": [
-      "Searchable image archive",
-      "Clear visual indication of matched content"
-    ],
-    "tech": [
-      "Python",
-      "OCR",
-      "OpenCV",
-      "Regex",
-      "Embeddings",
-      "FastAPI"
-    ],
-    "media": {
-      "cover": "media/text-search-image/cover.png",
-      "images": [],
-      "videos": []
-    }
-  },
-  {
     "slug": "ml-prediction-dashboard",
     "title": "ML Prediction Dashboard with API Serving",
     "category": [
@@ -694,42 +628,6 @@
       "images": [],
       "videos": [
         "media/ml-dashboard/ML_dashboard.mp4"
-      ]
-    }
-  },
-  {
-    "slug": "flutter-app-ai-backend",
-    "title": "Mobile AI App with Flutter + FastAPI Backend",
-    "category": [
-      "CV"
-    ],
-    "one_liner": "Connect a user-facing Flutter app to AI inference endpoints through a deployable backend architecture.",
-    "problem": "AI features need an end-to-end delivery path from model-serving APIs to a polished mobile user experience.",
-    "approach": [
-      "Built Flutter UI flows for the application experience",
-      "Designed FastAPI endpoints for model/LLM inference",
-      "Containerized backend services for deployment-ready APIs"
-    ],
-    "results": [
-      "End-to-end AI app workflow",
-      "Stable backend structure for production-style usage"
-    ],
-    "tech": [
-      "Flutter",
-      "FastAPI",
-      "Python",
-      "CNN",
-      "deep learning",
-      "Docker",
-      "PostgreSQL",
-      "REST APIs"
-    ],
-    "media": {
-      "cover": "media/flutter-ai/cover.png",
-      "images": [],
-      "videos": [
-        "media/flutter-ai/flutter_app.mp4",
-        "media/flutter-ai/dog_app.mp4"
       ]
     }
   },
