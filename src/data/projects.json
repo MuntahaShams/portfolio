@@ -1,44 +1,52 @@
 [
-  {
-    "slug": "german-invoice-data-extraction",
-    "title": "German Invoice Extraction with OCR + Layout Models",
-    "category": [
-      "CV",
-      "NLP"
-    ],
-    "one_liner": "Turn German invoices into structured, validation-ready data using OCR, layout-aware extraction, and API-friendly outputs.",
-    "problem": "Finance and operations teams receive invoices in many layouts and scan qualities, making manual field extraction slow, inconsistent, and difficult to automate.",
-    "approach": [
-      "Built a robust OCR pipeline to capture invoice text across varied document quality",
-      "Combined layout-aware document modeling with field-level post-processing for structured extraction",
-      "Added validation logic and export-ready outputs for downstream systems and review workflows"
-    ],
-    "results": [
-      "Reliable extraction workflow for key invoice fields across changing layouts",
-      "Cleaner structured data for finance automation, dashboards, and human review"
-    ],
-    "tech": [
-      "Tesseract OCR",
-      "PaddleOCR",
-      "Hugging Face Transformers",
-      "PyTorch",
-      "OpenCV",
-      "Regex",
-      "spaCy",
-      "pandas",
-      "NumPy",
-      "FastAPI",
-      "Flask",
-      "Streamlit",
-      "CSS",
-      "Docker"
-    ],
-    "media": {
-      "cover": "media/german-invoice/cover.png",
-      "images": [],
-      "videos": []
-    }
-  },
+{
+  "slug": "medical-rag-knowledge-assistant",
+  "title": "Multilingual Medical RAG Assistant for Lecture-Based Learning",
+  "category": [
+    "RAG",
+    "NLP",
+    "CV"
+  ],
+  "one_liner": "Transform multilingual medical PDFs and PowerPoint lectures into a searchable, citation-backed AI assistant with image-aware references and exam practice generation.",
+  "problem": "Medical students and professionals often work with large lecture collections containing mixed formats, slide images, scanned content, and multilingual text in English, French, and German. Finding accurate answers, tracing them back to the original lecture material, and preparing exam-style questions manually is time-consuming and difficult.",
+  "approach": [
+    "Built a RAG-based knowledge system from medical lecture PDFs and PowerPoint files containing multilingual text, diagrams, and slide images",
+    "Extracted and indexed lecture content with page-level and slide-level references so answers could be traced back to the original source material",
+    "Integrated image-aware referencing to help users connect generated answers with relevant diagrams, figures, and visual lecture content",
+    "Used ChromaDB as the vector database for semantic retrieval across medical learning materials",
+    "Integrated Gemini models for question answering, reasoning over retrieved context, and multilingual response generation",
+    "Created a dashboard where users can switch between local lecture-material search and internet-based source mode",
+    "Added MCQ generation for exam preparation with Fast, Balanced, and Deep modes depending on the user’s desired speed and depth"
+  ],
+  "results": [
+    "Created a structured medical knowledge assistant that makes large lecture collections easier to search, study, and review",
+    "Enabled citation-backed answers with PDF page numbers and PowerPoint slide references for improved trust and traceability",
+    "Supported multilingual learning across English, French, and German lecture content",
+    "Improved exam preparation by generating customizable MCQs directly from the uploaded medical study material",
+    "Delivered an interactive dashboard suitable for students, educators, and medical training workflows"
+  ],
+  "tech": [
+    "Python",
+    "ChromaDB",
+    "Google Gemini",
+    "RAG",
+    "Vector Search",
+    "Embeddings",
+    "PDF Processing",
+    "PowerPoint Processing",
+    "OCR",
+    "Multilingual NLP",
+    "Image Referencing",
+    "Streamlit",
+    "pandas",
+    "NumPy"
+  ],
+  "media": {
+    "cover": "media/medical-rag/cover.png",
+    "images": [],
+    "videos": ["media/medical-rag/medical_rag.mp4"]
+  }
+},
   {
     "slug": "document-ai-custom-data-extraction",
     "title": "Document AI for Structured Field Extraction",
@@ -73,45 +81,6 @@
       "cover": "media/document-ai/cover.png",
       "images": [],
       "videos": []
-    }
-  },
-  {
-    "slug": "text-rag-pipeline",
-    "title": "Document RAG Assistant for Grounded Q&A",
-    "category": [
-      "GenAI",
-      "NLP"
-    ],
-    "one_liner": "Build document Q&A systems that retrieve relevant context first and generate answers grounded in source material.",
-    "problem": "Teams need reliable access to internal knowledge, but plain LLM chat can return unsupported answers or miss document-specific context.",
-    "approach": [
-      "Designed chunking, metadata, and retrieval strategies for private document collections",
-      "Constrained answer generation around retrieved context to improve grounding",
-      "Added user-facing formatting and guardrails for clearer, more trustworthy responses"
-    ],
-    "results": [
-      "Reusable RAG architecture for document assistants and internal knowledge bots",
-      "More transparent answers supported by relevant retrieved context"
-    ],
-    "tech": [
-      "Python",
-      "Embeddings",
-      "Vector DB",
-      "PostgreSQL",
-      "Pinecone",
-      "RAG",
-      "LLM",
-      "FlaskAPI",
-      "Docker",
-      "GCP",
-      "Streamlit"
-    ],
-    "media": {
-      "cover": "media/text-rag/cover.png",
-      "images": [],
-      "videos": [
-        "media/text-rag/medical_rag.mp4"
-      ]
     }
   },
   {
@@ -303,6 +272,52 @@
       ]
     }
   },
+    {
+      "slug": "ml-prediction-dashboard",
+      "title": "ML Prediction Dashboard with API Serving",
+      "category": [
+        "ML"
+      ],
+      "one_liner": "Serve machine-learning predictions through APIs and make model outputs easier to interpret in an interactive dashboard.",
+      "problem": "Stakeholders often need prediction systems that are not only accurate, but also accessible, comparable, and easy to review.",
+      "approach": [
+        "Trained and compared multiple machine-learning model families for prediction tasks",
+        "Built REST API endpoints for online and batch inference workflows",
+        "Created dashboard views for outputs, metrics, and model-facing interaction"
+      ],
+      "results": [
+        "End-to-end path from model prediction to business-facing visualization",
+        "Reusable pattern for production-style ML demo applications"
+      ],
+      "tech": [
+        "Unsupervised Learning",
+        "scikit-learn",
+        "XGBoost",
+        "LSTMs",
+        "forcasting models",
+        "fine-tuning",
+        "TensorFlow",
+        "PyTorch",
+        "pandas",
+        "NumPy",
+        "FastAPI",
+        "Flask",
+        "REST APIs",
+        "Matplotlib/Seaborn",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "media": {
+        "cover": "media/ml-dashboard/cover.png",
+        "images": [],
+        "videos": [
+          "media/ml-dashboard/ML_dashboard.mp4"
+        ]
+      }
+    },
   {
     "slug": "rag-stock-market-postgresql-gpt",
     "title": "Financial Data Assistant with PostgreSQL + GPT",
@@ -580,52 +595,6 @@
         "media/3d-diffusion/1.png"
       ],
       "videos": []
-    }
-  },
-  {
-    "slug": "ml-prediction-dashboard",
-    "title": "ML Prediction Dashboard with API Serving",
-    "category": [
-      "ML"
-    ],
-    "one_liner": "Serve machine-learning predictions through APIs and make model outputs easier to interpret in an interactive dashboard.",
-    "problem": "Stakeholders often need prediction systems that are not only accurate, but also accessible, comparable, and easy to review.",
-    "approach": [
-      "Trained and compared multiple machine-learning model families for prediction tasks",
-      "Built REST API endpoints for online and batch inference workflows",
-      "Created dashboard views for outputs, metrics, and model-facing interaction"
-    ],
-    "results": [
-      "End-to-end path from model prediction to business-facing visualization",
-      "Reusable pattern for production-style ML demo applications"
-    ],
-    "tech": [
-      "Unsupervised Learning",
-      "scikit-learn",
-      "XGBoost",
-      "LSTMs",
-      "forcasting models",
-      "fine-tuning",
-      "TensorFlow",
-      "PyTorch",
-      "pandas",
-      "NumPy",
-      "FastAPI",
-      "Flask",
-      "REST APIs",
-      "Matplotlib/Seaborn",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "PostgreSQL",
-      "Docker"
-    ],
-    "media": {
-      "cover": "media/ml-dashboard/cover.png",
-      "images": [],
-      "videos": [
-        "media/ml-dashboard/ML_dashboard.mp4"
-      ]
     }
   },
   {
