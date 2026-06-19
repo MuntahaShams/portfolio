@@ -267,9 +267,7 @@
     "media": {
       "cover": "media/address-extraction/cover.png",
       "images": [],
-      "videos": [
-        "media/address-extraction/address-extraction.mp4"
-      ]
+      "videos": []
     }
   },
     {
