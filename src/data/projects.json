@@ -78,7 +78,7 @@
       "Docker"
     ],
     "media": {
-      "cover": "media/document-ai/cover.png",
+      "cover": "media/document-ai/doc_ai.png",
       "images": [],
       "videos": []
     }
@@ -265,7 +265,7 @@
       "AWS"
     ],
     "media": {
-      "cover": "media/address-extraction/cover.png",
+      "cover": "media/address-extraction/add_demo.png",
       "images": [],
       "videos": []
     }
