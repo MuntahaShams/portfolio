@@ -1,75 +1,79 @@
 [
-{
-  "slug": "medical-rag-knowledge-assistant",
-  "title": "Multilingual Medical RAG Assistant for Lecture-Based Learning",
-  "category": [
-    "RAG",
-    "NLP",
-    "CV"
-  ],
-  "one_liner": "Transform multilingual medical PDFs and PowerPoint lectures into a searchable, citation-backed AI assistant with image-aware references and exam practice generation.",
-  "problem": "Medical students and professionals often work with large lecture collections containing mixed formats, slide images, scanned content, and multilingual text in English, French, and German. Finding accurate answers, tracing them back to the original lecture material, and preparing exam-style questions manually is time-consuming and difficult.",
-  "approach": [
-    "Built a RAG-based knowledge system from medical lecture PDFs and PowerPoint files containing multilingual text, diagrams, and slide images",
-    "Extracted and indexed lecture content with page-level and slide-level references so answers could be traced back to the original source material",
-    "Integrated image-aware referencing to help users connect generated answers with relevant diagrams, figures, and visual lecture content",
-    "Used ChromaDB as the vector database for semantic retrieval across medical learning materials",
-    "Integrated Gemini models for question answering, reasoning over retrieved context, and multilingual response generation",
-    "Created a dashboard where users can switch between local lecture-material search and internet-based source mode",
-    "Added MCQ generation for exam preparation with Fast, Balanced, and Deep modes depending on the user’s desired speed and depth"
-  ],
-  "results": [
-    "Created a structured medical knowledge assistant that makes large lecture collections easier to search, study, and review",
-    "Enabled citation-backed answers with PDF page numbers and PowerPoint slide references for improved trust and traceability",
-    "Supported multilingual learning across English, French, and German lecture content",
-    "Improved exam preparation by generating customizable MCQs directly from the uploaded medical study material",
-    "Delivered an interactive dashboard suitable for students, educators, and medical training workflows"
-  ],
-  "tech": [
-    "Python",
-    "ChromaDB",
-    "Google Gemini",
-    "RAG",
-    "Vector Search",
-    "Embeddings",
-    "PDF Processing",
-    "PowerPoint Processing",
-    "OCR",
-    "Multilingual NLP",
-    "Image Referencing",
-    "Streamlit",
-    "pandas",
-    "NumPy"
-  ],
-  "media": {
-    "cover": "media/medical-rag/cover.png",
-    "images": [],
-    "videos": ["media/medical-rag/medical_rag.mp4"]
-  }
-},
+  {
+    "slug": "medical-rag-knowledge-assistant",
+    "title": "Multilingual RAG Knowledge Assistant for Documents & Learning Content",
+    "category": [
+      "RAG",
+      "NLP",
+      "CV"
+    ],
+    "one_liner": "Turn multilingual PDFs, presentations, and visual documents into a searchable, citation-backed AI knowledge assistant with image-aware retrieval and question generation.",
+    "problem": "Teams and learners often work with large collections of PDFs, presentations, scanned pages, and visual documents. Finding the right information, tracing answers back to the source, and generating useful study or review material manually is slow and error-prone.",
+    "approach": [
+      "Built a RAG-based knowledge system for PDFs and PowerPoint files containing multilingual text, diagrams, and slide images",
+      "Extracted and indexed content with page-level and slide-level references so generated answers could be traced back to the original source",
+      "Added image-aware referencing to connect responses with relevant diagrams, figures, and visual document content",
+      "Used ChromaDB for semantic vector retrieval across large document collections",
+      "Integrated Gemini models for context-aware question answering, reasoning, and multilingual response generation",
+      "Created an interactive dashboard with local knowledge-base search and optional internet-based source mode",
+      "Added configurable question and MCQ generation for learning, assessment, and review workflows"
+    ],
+    "results": [
+      "Created a reusable document knowledge assistant for large, mixed-format information collections",
+      "Enabled citation-backed answers with PDF page and PowerPoint slide references for improved trust and traceability",
+      "Supported multilingual search and generation across English, French, and German content",
+      "Added automated question generation for training, assessment, and knowledge-review use cases",
+      "Delivered an interactive workflow suitable for education, internal knowledge bases, and document-heavy business processes"
+    ],
+    "tech": [
+      "Python",
+      "ChromaDB",
+      "Google Gemini",
+      "RAG",
+      "Vector Search",
+      "Embeddings",
+      "PDF Processing",
+      "PowerPoint Processing",
+      "OCR",
+      "Multilingual NLP",
+      "Image Referencing",
+      "Streamlit",
+      "pandas",
+      "NumPy"
+    ],
+    "media": {
+      "cover": "media/medical-rag/cover.png",
+      "images": [],
+      "videos": [
+        "media/medical-rag/medical_rag.mp4"
+      ]
+    }
+  },
   {
     "slug": "document-ai-custom-data-extraction",
-    "title": "Document AI for Structured Field Extraction",
+    "title": "Document AI for Intelligent Data Extraction",
     "category": [
       "CV",
       "NLP"
     ],
-    "one_liner": "Extract business-critical fields from PDFs and scans, then convert them into structured outputs ready for automation.",
-    "problem": "Organizations often handle documents with inconsistent templates, which makes manual extraction expensive and rule-only systems difficult to maintain.",
+    "one_liner": "Extract structured business data from PDFs, scans, and semi-structured documents using OCR, layout analysis, NLP, and API-ready validation.",
+    "problem": "Organizations receive documents in inconsistent formats, layouts, and scan qualities. Manual extraction is expensive, while rigid template-based systems often fail when fields move or document structures change.",
     "approach": [
-      "Combined OCR, layout parsing, and field-detection logic into a reusable extraction pipeline",
-      "Applied rule-based and ML/NLP methods where each was most effective",
-      "Produced validated JSON/CSV outputs designed for APIs, analytics, and internal tools"
+      "Built a reusable extraction pipeline combining OCR, layout analysis, and field-detection logic",
+      "Applied rule-based, NLP, and machine-learning methods where each approach was most effective",
+      "Normalized and validated extracted values before producing structured JSON and CSV outputs",
+      "Prepared the workflow for integration with APIs, analytics systems, and downstream business automation"
     ],
     "results": [
-      "Flexible document extraction workflow across multiple template variants",
-      "Reduced friction when integrating document data into downstream products"
+      "Created a flexible document-processing workflow that can adapt across multiple template variants",
+      "Reduced manual effort required to convert unstructured documents into structured application data",
+      "Produced integration-ready outputs suitable for automation, analytics, and internal software systems"
     ],
     "tech": [
       "Python",
       "OCR",
       "GCP",
-      "fine-tuning",
+      "Fine-tuning",
       "OpenCV",
       "Regex",
       "spaCy",
@@ -79,39 +83,38 @@
     ],
     "media": {
       "cover": "media/document-ai/cover.png",
-      "images": ["media/document-ai/doc_ai.png"],
+      "images": [
+        "media/document-ai/doc_ai.png"
+      ],
       "videos": []
     }
   },
   {
     "slug": "ai-powered-digital-health-saas",
-    "title": "AI-Powered Digital Health SaaS Platform",
+    "title": "AI-Powered SaaS Platform with Human-in-the-Loop Workflows",
     "category": [
       "GenAI",
       "NLP",
       "Full-Stack AI"
     ],
-    "one_liner": "Built and integrated AI-assisted healthcare workflows within a full-stack SaaS platform, contributing across AI development, Lovable frontend implementation, database integration, backend APIs, and QA-driven product delivery.",
-    "problem": "Healthcare professionals work with large amounts of client-generated information while also managing documentation, follow-up activities, and ongoing care workflows. The goal was to build a clinician-led digital platform that combines journaling, structured healthcare workflows, and AI assistance while keeping sensitive AI-generated outputs reviewable and under human control.",
+    "one_liner": "Built and integrated AI-assisted workflows inside a full-stack SaaS product, contributing across LLM features, Lovable frontend development, database integration, APIs, and QA-driven delivery.",
+    "problem": "Modern SaaS products increasingly need AI features that work reliably inside real user workflows rather than as isolated demos. The challenge was to combine user-facing interfaces, persistent application data, backend services, and reviewable AI outputs in one production-oriented system.",
     "approach": [
-      "Developed and integrated AI-assisted workflows for transforming journal and application data into structured summaries, documentation drafts, recommendations, and actionable insights",
-      "Worked on LLM-based functionality with prompt design and structured output generation for application-ready AI responses",
-      "Implemented and refined user-facing interfaces using Lovable alongside frontend code, converting product requirements into practical client and clinician workflows",
-      "Connected frontend functionality with database-backed workflows to support persistent user, journal, and application data",
-      "Integrated AI features with backend APIs and application data flows so generated outputs could be used directly within the SaaS product",
-      "Collaborated closely with backend developers on API contracts, data structures, integration requirements, debugging, and end-to-end feature behavior",
-      "Worked closely with QA to reproduce issues, validate frontend and AI behavior, test edge cases, and improve feature reliability before release",
-      "Contributed to human-in-the-loop AI workflows where generated content remained editable and reviewable rather than being treated as autonomous clinical decisions",
-      "Worked across multiple parts of the product lifecycle including AI development, frontend implementation, database integration, debugging, testing, and cross-functional feature delivery"
+      "Developed AI-assisted workflows that transformed application data into summaries, structured drafts, recommendations, and actionable insights",
+      "Worked on LLM prompting and structured output generation for application-ready AI responses",
+      "Implemented and refined user-facing interfaces using Lovable together with frontend code",
+      "Connected frontend functionality with persistent database-backed workflows",
+      "Integrated AI features with backend APIs and application data flows",
+      "Collaborated closely with backend developers on API contracts, data structures, debugging, and end-to-end feature behavior",
+      "Worked with QA to reproduce issues, validate AI and frontend behavior, test edge cases, and improve release quality",
+      "Applied human-in-the-loop patterns so generated outputs remained reviewable and editable before final use"
     ],
     "results": [
-      "Delivered AI capabilities as part of a complete multi-user SaaS product rather than as isolated AI prototypes",
-      "Connected AI workflows with frontend interfaces, persistent application data, and backend services to support end-to-end user experiences",
-      "Built AI-assisted functionality for summarization, structured documentation, recommendations, and data-driven workflow support",
-      "Supported client-facing and clinician-facing workflows within a role-based digital healthcare platform",
+      "Delivered AI capabilities as part of a complete multi-user SaaS application rather than standalone prototypes",
+      "Connected AI, frontend, database, and backend services into practical end-to-end user workflows",
       "Improved product reliability through iterative testing and close collaboration with QA and backend engineering",
-      "Implemented AI functionality with human review, editability, and traceability as core design requirements",
-      "Demonstrated full-stack AI product development experience spanning AI integration, UI development, database workflows, API integration, testing, and product delivery"
+      "Implemented reviewable AI interactions suited to business processes where human oversight is important",
+      "Demonstrated cross-functional product development across AI integration, UI implementation, databases, APIs, testing, and delivery"
     ],
     "tech": [
       "LLMs",
@@ -134,7 +137,9 @@
     "media": {
       "cover": "media/therapy/cover.png",
       "images": [],
-      "videos": ["media/therapy/dyscoverwell.mp4"]
+      "videos": [
+        "media/therapy/dyscoverwell.mp4"
+      ]
     }
   },
   {
@@ -144,25 +149,27 @@
       "GenAI",
       "NLP"
     ],
-    "one_liner": "Make long videos searchable by turning transcripts and segments into a retrieval-powered Q&A experience.",
-    "problem": "Finding specific information in lectures, meetings, or long recordings is time-consuming when users must scrub through the full video manually.",
+    "one_liner": "Turn long videos into a searchable knowledge base by combining transcript processing, semantic retrieval, and retrieval-grounded question answering.",
+    "problem": "Important information inside meetings, lectures, webinars, interviews, and recordings is difficult to retrieve when users must manually scrub through long videos.",
     "approach": [
-      "Extracted transcripts and organized video content into semantically meaningful segments",
-      "Indexed segment-level text with embeddings to support accurate retrieval",
-      "Generated answers from the most relevant retrieved moments instead of the full recording"
+      "Extracted transcripts and divided long-form video content into semantically meaningful segments",
+      "Indexed segment-level text with embeddings for accurate semantic search",
+      "Mapped retrieved text back to relevant moments in the source content",
+      "Generated answers from the most relevant retrieved segments instead of processing the full recording for every query"
     ],
     "results": [
-      "Searchable video knowledge base for long-form content",
-      "Faster access to relevant moments and answers inside recordings"
+      "Created a reusable searchable-video knowledge workflow for long-form recordings",
+      "Reduced the time required to find specific topics and answers inside video content",
+      "Established a practical RAG pattern for meetings, training videos, lectures, and media archives"
     ],
     "tech": [
       "Python",
-      "Video data processing",
+      "Video Processing",
       "Embeddings",
       "Vector DB",
       "PostgreSQL",
       "RAG",
-      "LLM",
+      "LLMs",
       "FastAPI",
       "Docker"
     ],
@@ -174,25 +181,27 @@
   },
   {
     "slug": "custom-llm-text-generation-with-data-ui",
-    "title": "Data-Grounded LLM Writing Assistant with Review UI",
+    "title": "Data-Grounded LLM Content Generation Platform",
     "category": [
       "GenAI",
       "NLP"
     ],
-    "one_liner": "Generate domain-specific content from connected knowledge sources through a controllable, review-friendly LLM interface.",
-    "problem": "Business users need AI-generated text that reflects their own data, follows constraints, and remains easy to review before publishing or sharing.",
+    "one_liner": "Generate domain-specific content from connected knowledge sources through a controllable, review-friendly LLM application.",
+    "problem": "Businesses need AI-generated content that reflects their own information, follows constraints, and remains easy to review before it is published, shared, or used in an operational workflow.",
     "approach": [
-      "Grounded generation with retrieval from custom knowledge sources and structured context",
-      "Added templates, tone controls, and guardrails to shape the generated output",
-      "Built a user interface for drafting, reviewing, and exporting content"
+      "Grounded generation with retrieval from custom knowledge sources and structured contextual data",
+      "Added prompt templates, tone controls, and output constraints to improve consistency",
+      "Connected the generation workflow with database-backed content and application logic",
+      "Built a user interface for drafting, reviewing, editing, and exporting generated content"
     ],
     "results": [
-      "More consistent, context-aware text generation for real workflows",
-      "Accessible content-generation experience for non-technical users"
+      "Delivered more consistent and context-aware text generation for domain-specific workflows",
+      "Created a reusable pattern for internal writing assistants, reporting tools, and content-generation applications",
+      "Made LLM-based content generation accessible to non-technical users through a review-oriented interface"
     ],
     "tech": [
       "Python",
-      "LLM",
+      "LLMs",
       "RAG",
       "Embeddings",
       "PostgreSQL",
@@ -209,7 +218,9 @@
     ],
     "media": {
       "cover": "media/text-gen-ui/cover.png",
-      "images": ["media/text-gen-ui/example.png"],
+      "images": [
+        "media/text-gen-ui/example.png"
+      ],
       "videos": [
         "media/text-gen-ui/student_portal.mp4"
       ]
@@ -217,21 +228,21 @@
   },
   {
     "slug": "character-consistency-lora-stable-diffusion",
-    "title": "Character Consistency with LoRA + Stable Diffusion",
+    "title": "Custom Image Generation with LoRA + Stable Diffusion",
     "category": [
       "GenAI",
       "CV"
     ],
-    "one_liner": "Train a LoRA-based image generation workflow that preserves a character’s identity across prompts, poses, and scenes.",
-    "problem": "Creative teams often need the same character to appear consistently across multiple images, but default image generation can drift in facial features, clothing, and styling.",
+    "one_liner": "Fine-tune Stable Diffusion with LoRA to preserve custom visual identities, styles, or subjects across prompts, poses, and scenes.",
+    "problem": "Generative-image applications often need a subject, product, character, or visual style to remain consistent across many outputs, but standard generation can drift in appearance between prompts.",
     "approach": [
-      "Prepared a focused character dataset for Stable Diffusion adaptation",
-      "Fine-tuned a LoRA workflow to improve identity retention and visual repeatability",
-      "Refined prompts and sampling settings to support consistency across different scene concepts"
+      "Prepared focused image datasets for parameter-efficient Stable Diffusion adaptation",
+      "Fine-tuned LoRA models to improve identity and style consistency across generations",
+      "Refined prompts and inference settings to control composition, appearance, and repeatability"
     ],
     "results": [
-      "More stable recurring-character generation for storytelling and branded visuals",
-      "Reusable workflow for character-focused creative production"
+      "Improved consistency of recurring visual subjects across different prompts and scenes",
+      "Built a reusable fine-tuning workflow for custom creative, branding, and content-generation use cases"
     ],
     "tech": [
       "Stable Diffusion",
@@ -242,27 +253,31 @@
     ],
     "media": {
       "cover": "media/character-consistency-lora/cover.png",
-      "images": ["media/character-consistency-lora/example.jpg"],
+      "images": [
+        "media/character-consistency-lora/example.jpg"
+      ],
       "videos": []
     }
   },
   {
     "slug": "cv-jd-similarity",
-    "title": "CV–Job Description Matching with Semantic Ranking",
+    "title": "Semantic Matching & Ranking with Transformer Embeddings",
     "category": [
       "NLP",
       "ML"
     ],
-    "one_liner": "Match CVs to job descriptions with semantic similarity, ranking features, and explainable skill-gap insights.",
-    "problem": "Recruiters and applicants need a faster way to evaluate role fit than manual keyword matching, especially when equivalent skills are phrased differently.",
+    "one_liner": "Match and rank text records using transformer embeddings, semantic similarity, scoring logic, and explainable gap analysis.",
+    "problem": "Many ranking and recommendation workflows rely too heavily on exact keyword overlap, even when two records express the same concepts using different language.",
     "approach": [
-      "Extracted role-relevant terms, skills, and text signals with NLP pipelines",
-      "Computed semantic alignment using transformer embeddings and similarity methods",
-      "Added scoring logic and missing-skill feedback to make results more actionable"
+      "Extracted domain-relevant entities, terms, and text signals with NLP pipelines",
+      "Computed semantic alignment using transformer embeddings and vector-similarity methods",
+      "Combined semantic similarity with scoring and ranking logic for more useful matches",
+      "Added explainable missing-signal or gap feedback to make ranking results more actionable"
     ],
     "results": [
-      "More informative CV–JD matching than keyword overlap alone",
-      "Actionable fit summaries that support screening and candidate improvement"
+      "Produced more informative semantic matching than keyword overlap alone",
+      "Created a reusable ranking pipeline applicable to recruitment, search, recommendations, and record matching",
+      "Added explainable feedback that helps users understand why items rank highly or where important information is missing"
     ],
     "tech": [
       "spaCy",
@@ -291,28 +306,30 @@
   },
   {
     "slug": "address-extraction-document-ui",
-    "title": "Address Extraction Review Tool for Scanned Documents",
+    "title": "Entity Extraction & Human Review Tool for Scanned Documents",
     "category": [
       "CV",
       "NLP"
     ],
-    "one_liner": "Extract address fields from scanned documents and route them through a review UI before export.",
-    "problem": "Address blocks can be fragmented, noisy, or inconsistently formatted in real documents, creating errors in billing, shipping, and back-office workflows.",
+    "one_liner": "Extract structured entities from scanned documents and route uncertain outputs through a human-review interface before export.",
+    "problem": "Important fields in real-world documents can be fragmented, noisy, inconsistently formatted, or partially obscured, which makes fully automated extraction unreliable.",
     "approach": [
-      "Located candidate address regions using OCR and layout-aware heuristics",
-      "Structured components with NER- and rule-based parsing logic",
-      "Added a correction interface so users can review and fix uncertain outputs before export"
+      "Located candidate information regions using OCR and layout-aware heuristics",
+      "Structured extracted components with NER, vision APIs, and rule-based parsing logic",
+      "Added confidence-aware validation and a correction interface for uncertain outputs",
+      "Prepared reviewed results for downstream APIs and business systems"
     ],
     "results": [
-      "Practical extraction flow for messy address data in scanned documents",
-      "Human-in-the-loop review path for safer operational use"
+      "Created a practical extraction workflow for noisy and inconsistent scanned documents",
+      "Added a human-in-the-loop review path for higher-confidence operational use",
+      "Built a reusable pattern for extracting addresses, identifiers, names, and other structured entities"
     ],
     "tech": [
       "Python",
       "OCR",
       "OpenAI",
       "Vision API",
-      "FlaskAPI",
+      "Flask",
       "HTML",
       "CSS",
       "Docker",
@@ -320,74 +337,80 @@
     ],
     "media": {
       "cover": "media/address-extraction/cover.png",
-      "images": ["media/address-extraction/add_demo.png"],
+      "images": [
+        "media/address-extraction/add_demo.png"
+      ],
       "videos": []
     }
   },
-    {
-      "slug": "ml-prediction-dashboard",
-      "title": "ML Prediction Dashboard with API Serving",
-      "category": [
-        "ML"
-      ],
-      "one_liner": "Serve machine-learning predictions through APIs and make model outputs easier to interpret in an interactive dashboard.",
-      "problem": "Stakeholders often need prediction systems that are not only accurate, but also accessible, comparable, and easy to review.",
-      "approach": [
-        "Trained and compared multiple machine-learning model families for prediction tasks",
-        "Built REST API endpoints for online and batch inference workflows",
-        "Created dashboard views for outputs, metrics, and model-facing interaction"
-      ],
-      "results": [
-        "End-to-end path from model prediction to business-facing visualization",
-        "Reusable pattern for production-style ML demo applications"
-      ],
-      "tech": [
-        "Unsupervised Learning",
-        "scikit-learn",
-        "XGBoost",
-        "LSTMs",
-        "forcasting models",
-        "fine-tuning",
-        "TensorFlow",
-        "PyTorch",
-        "pandas",
-        "NumPy",
-        "FastAPI",
-        "Flask",
-        "REST APIs",
-        "Matplotlib/Seaborn",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PostgreSQL",
-        "Docker"
-      ],
-      "media": {
-        "cover": "media/ml-dashboard/cover.png",
-        "images": [],
-        "videos": [
-          "media/ml-dashboard/ML_dashboard.mp4"
-        ]
-      }
-    },
+  {
+    "slug": "ml-prediction-dashboard",
+    "title": "End-to-End ML Prediction Dashboard with API Serving",
+    "category": [
+      "ML"
+    ],
+    "one_liner": "Train, compare, serve, and visualize machine-learning models through REST APIs and an interactive application dashboard.",
+    "problem": "Machine-learning models are most useful when predictions can be served reliably, compared clearly, and reviewed through an interface accessible to non-technical stakeholders.",
+    "approach": [
+      "Trained and compared multiple machine-learning and deep-learning model families for prediction tasks",
+      "Built REST API endpoints for online and batch inference workflows",
+      "Connected models with persistent data and application-level prediction pipelines",
+      "Created dashboard views for predictions, evaluation metrics, and model-facing interaction"
+    ],
+    "results": [
+      "Delivered an end-to-end workflow from model development to API-based prediction and visualization",
+      "Created a reusable architecture for production-style ML applications and proof-of-concept dashboards",
+      "Made model outputs easier for non-technical stakeholders to inspect and compare"
+    ],
+    "tech": [
+      "Unsupervised Learning",
+      "scikit-learn",
+      "XGBoost",
+      "LSTMs",
+      "Forecasting Models",
+      "Fine-tuning",
+      "TensorFlow",
+      "PyTorch",
+      "pandas",
+      "NumPy",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "Matplotlib/Seaborn",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "media": {
+      "cover": "media/ml-dashboard/cover.png",
+      "images": [],
+      "videos": [
+        "media/ml-dashboard/ML_dashboard.mp4"
+      ]
+    }
+  },
   {
     "slug": "rag-stock-market-postgresql-gpt",
-    "title": "Financial Data Assistant with PostgreSQL + GPT",
+    "title": "Natural-Language Data Assistant with PostgreSQL + GPT",
     "category": [
       "GenAI",
       "NLP",
       "ML"
     ],
-    "one_liner": "Let users query structured financial data in natural language and receive clear, application-ready responses.",
-    "problem": "Business users often need insights from market data without writing SQL or manually translating questions into database operations.",
+    "one_liner": "Let users query structured database information in natural language and receive clear, application-ready responses through an LLM-powered data assistant.",
+    "problem": "Business users often need insights from structured data but cannot efficiently write SQL or translate every question into database operations.",
     "approach": [
-      "Stored market data in PostgreSQL and organized it for structured querying",
-      "Combined retrieval and LLM reasoning to interpret user questions where useful",
+      "Stored structured data in PostgreSQL and organized it for reliable querying",
+      "Combined retrieval, database access, and LLM reasoning to interpret natural-language questions",
+      "Converted user questions into context-aware data interactions",
       "Returned formatted responses designed for dashboards, APIs, and decision-support interfaces"
     ],
     "results": [
-      "Natural-language access layer for structured financial datasets",
-      "Reusable pattern for database-backed AI assistants"
+      "Created a natural-language access layer for structured PostgreSQL datasets",
+      "Built a reusable pattern for database-backed AI assistants across business domains",
+      "Reduced the technical barrier between end users and structured operational data"
     ],
     "tech": [
       "Python",
@@ -395,7 +418,7 @@
       "RAG",
       "LangChain",
       "PostgreSQL",
-      "LLM",
+      "LLMs",
       "FastAPI",
       "Docker",
       "AWS",
@@ -403,7 +426,10 @@
     ],
     "media": {
       "cover": "media/stock-rag/cover.png",
-      "images": ["media/stock-rag/example.png", "media/stock-rag/example2.png"],
+      "images": [
+        "media/stock-rag/example.png",
+        "media/stock-rag/example2.png"
+      ],
       "videos": []
     }
   },
@@ -414,16 +440,18 @@
       "ML",
       "NLP"
     ],
-    "one_liner": "Design AI-powered business automations in n8n that connect triggers, APIs, databases, and LLM-based processing.",
-    "problem": "Clients need repeatable workflows for lead handling, content processing, notifications, and data enrichment without constantly building custom glue code.",
+    "one_liner": "Automate repetitive business processes by connecting triggers, APIs, databases, webhooks, and LLM-based decision or processing steps in n8n.",
+    "problem": "Teams often spend time manually moving information between applications, enriching data, sending notifications, and repeating predictable operational tasks.",
     "approach": [
-      "Built trigger-driven flows that ingest, process, store, and notify across connected systems",
-      "Integrated LLMs, APIs, webhooks, and databases into reusable automations",
-      "Added retries, logging, and failure-aware handling to make workflows easier to operate"
+      "Built trigger-driven workflows that ingest, process, store, and route information across connected services",
+      "Integrated LLMs, REST APIs, webhooks, databases, and custom processing steps into reusable automations",
+      "Added branching logic, retries, logging, and failure-aware handling for more reliable execution",
+      "Structured workflows so individual components could be adapted to different business processes"
     ],
     "results": [
-      "Reduced repetitive manual work in AI-assisted business processes",
-      "Client-friendly automation patterns that can be adapted across use cases"
+      "Reduced repetitive manual work in AI-assisted business operations",
+      "Created reusable automation patterns for lead handling, document processing, notifications, content workflows, and data enrichment",
+      "Improved reliability through explicit error handling and observable workflow execution"
     ],
     "tech": [
       "n8n",
@@ -431,39 +459,43 @@
       "APIs",
       "PostgreSQL",
       "Python",
-      "LLM"
+      "LLMs"
     ],
     "media": {
       "cover": "media/n8n/cover.png",
-      "images": ["media/n8n/workflow_example.png"],
+      "images": [
+        "media/n8n/workflow_example.png"
+      ],
       "videos": []
     }
   },
   {
     "slug": "surfing-pose-maneuver-classification",
-    "title": "Surfing Pose Tracking & Maneuver Recognition",
+    "title": "Human Pose Tracking & Action Recognition from Video",
     "category": [
       "CV",
       "ML"
     ],
-    "one_liner": "Analyze surfing videos with robust pose tracking and temporal maneuver recognition for coaching-style feedback.",
-    "problem": "Surf footage is difficult to analyze because of water spray, camera motion, occlusions, and fast athlete movement, yet coaches still need reliable feedback signals.",
+    "one_liner": "Track human pose across challenging video and classify actions using temporal motion features and deep-learning pipelines.",
+    "problem": "Human activity recognition becomes difficult when videos contain fast movement, camera motion, occlusion, changing viewpoints, or noisy keypoint detections.",
     "approach": [
-      "Implemented multiple pose-estimation backends to improve keypoint tracking under difficult footage",
-      "Smoothed temporal trajectories and engineered motion features from joint geometry and movement cues",
-      "Built a sequence-modeling pipeline for maneuver recognition and real-time feedback delivery"
+      "Implemented and compared multiple pose-estimation backends for robust human keypoint tracking",
+      "Smoothed temporal keypoint trajectories and engineered motion features from joint geometry and movement cues",
+      "Built sequence-modeling and classification pipelines for recognizing actions from pose dynamics",
+      "Prepared inference components for real-time or near-real-time application workflows"
     ],
     "results": [
-      "More stable pose-based analysis in challenging sports video",
-      "Product-oriented foundation for maneuver detection and coaching feedback"
+      "Improved stability of pose-based analysis under challenging video conditions",
+      "Built a reusable foundation for action recognition, sports analytics, exercise analysis, ergonomics, and human-computer interaction",
+      "Connected pose estimation and temporal classification into a product-oriented inference workflow"
     ],
     "tech": [
       "MediaPipe Pose",
-      "openPose",
+      "OpenPose",
       "RTMO",
       "YOLOv8-Pose",
-      "deep learning",
-      "classification models",
+      "Deep Learning",
+      "Classification Models",
       "PyTorch",
       "TensorFlow",
       "OpenCV",
@@ -479,7 +511,9 @@
     ],
     "media": {
       "cover": "media/pose_estimation/cover.png",
-      "images": ["media/pose_estimation/example.jpeg"],
+      "images": [
+        "media/pose_estimation/example.jpeg"
+      ],
       "videos": [
         "media/pose_estimation/surfing.mp4"
       ]
@@ -487,21 +521,23 @@
   },
   {
     "slug": "3d-object-alignment-teeth",
-    "title": "3D Dental Scan Alignment with Point Clouds",
+    "title": "3D Point Cloud Registration & Object Alignment",
     "category": [
       "CV",
       "ML"
     ],
-    "one_liner": "Align dental 3D scans through point-cloud registration and coarse-to-fine geometry matching.",
-    "problem": "Dental analysis workflows depend on precise 3D alignment, but noisy scans and imperfect geometry can make registration unreliable.",
+    "one_liner": "Align 3D scans and meshes using point-cloud registration, coarse-to-fine geometry matching, and robust preprocessing.",
+    "problem": "3D applications often require accurate alignment between scans or meshes, but noisy geometry, partial overlap, and imperfect initial orientation can make registration unreliable.",
     "approach": [
-      "Prepared mesh and point-cloud inputs from common 3D and medical formats",
-      "Applied coarse-to-fine registration using RANSAC/FGR/ICP-style techniques",
-      "Focused on stability across imperfect scans and varied alignment conditions"
+      "Prepared mesh and point-cloud inputs from common 3D data formats",
+      "Applied coarse-to-fine registration using RANSAC, FGR, and ICP-style techniques",
+      "Used geometric feature processing and learned 3D representations where appropriate",
+      "Focused on alignment stability across imperfect scans and varied initialization conditions"
     ],
     "results": [
-      "Reusable 3D registration workflow for dental geometry tasks",
-      "More dependable preprocessing for downstream visualization and analysis"
+      "Created a reusable 3D registration workflow for scan-to-scan and object-alignment tasks",
+      "Improved preprocessing reliability for downstream measurement, visualization, reconstruction, and analysis",
+      "Established a general workflow applicable to medical, industrial, robotics, and 3D inspection use cases"
     ],
     "tech": [
       "Open3D",
@@ -524,27 +560,29 @@
   },
   {
     "slug": "yolo-detection",
-    "title": "Real-Time YOLO Object Detection Pipeline",
+    "title": "Real-Time Object Detection with YOLO",
     "category": [
       "CV",
       "ML"
     ],
-    "one_liner": "Develop real-time object detection pipelines with YOLOv8 and deployment-ready inference optimization.",
-    "problem": "Video applications need object detection that remains accurate while meeting latency and deployment constraints.",
+    "one_liner": "Train and deploy real-time object detection models with YOLO, optimized inference, APIs, and containerized serving.",
+    "problem": "Computer-vision applications need object detection that remains accurate while also meeting latency, throughput, and deployment constraints.",
     "approach": [
-      "Trained YOLOv8 detection models with augmentation and iterative evaluation",
+      "Trained and fine-tuned YOLOv8 detection models using data augmentation and iterative evaluation",
       "Optimized inference using ONNX, TensorRT, and CUDA-oriented deployment paths",
+      "Built image and video inference workflows with OpenCV and Ultralytics",
       "Served predictions through API-based workflows and containerized packaging"
     ],
     "results": [
-      "Production-oriented object detection setup for real-time use cases",
-      "Deployment-friendly model artifacts and serving pattern"
+      "Created a production-oriented object-detection pipeline for real-time image and video use cases",
+      "Prepared deployment-friendly model artifacts for GPU-accelerated inference",
+      "Built a reusable serving pattern for monitoring, inspection, analytics, and automation applications"
     ],
     "tech": [
       "YOLOv8",
       "PyTorch",
       "OpenCV",
-      "fine-tuning",
+      "Fine-tuning",
       "Ultralytics",
       "TensorRT",
       "ONNX",
@@ -566,27 +604,29 @@
   },
   {
     "slug": "yolo-segmentation",
-    "title": "YOLO Segmentation for Visual Inspection",
+    "title": "Real-Time Instance Segmentation with YOLO",
     "category": [
       "CV",
       "ML"
     ],
-    "one_liner": "Build segmentation systems for visual inspection and measurement tasks using YOLO-based models.",
-    "problem": "Many industrial and inspection problems require pixel-level understanding rather than simple bounding-box detection.",
+    "one_liner": "Train and deploy segmentation models for pixel-level visual understanding, inspection, measurement, and automation tasks.",
+    "problem": "Many computer-vision problems require exact object boundaries rather than simple bounding boxes, especially for measurement, inspection, defect analysis, and scene understanding.",
     "approach": [
-      "Trained a YOLO segmentation workflow with augmentation and dataset quality improvements",
-      "Evaluated segmentation behavior with task-relevant metrics such as IoU, precision, and recall",
-      "Prepared optimized inference exports for practical deployment scenarios"
+      "Trained and fine-tuned YOLO segmentation models with data augmentation and dataset-quality improvements",
+      "Evaluated model behavior using IoU, precision, recall, and task-relevant visual checks",
+      "Built OpenCV-based inference workflows for images and video",
+      "Prepared ONNX and TensorRT exports for optimized deployment"
     ],
     "results": [
-      "Segmentation pipeline suited to inspection-style computer vision workflows",
-      "Optimized path from training to inference deployment"
+      "Created a reusable segmentation pipeline for pixel-level computer-vision applications",
+      "Established an optimized path from training and evaluation to real-time inference deployment",
+      "Built a foundation applicable to visual inspection, measurement, medical imaging, and industrial automation"
     ],
     "tech": [
       "YOLOv8",
       "PyTorch",
       "segmentation models",
-      "fine-tuning",
+      "Fine-tuning",
       "OpenCV",
       "Ultralytics",
       "ONNX",
@@ -604,21 +644,23 @@
   },
   {
     "slug": "diffusion-assisted-3d-painting",
-    "title": "Diffusion-Guided 3D Asset Generation",
+    "title": "Generative 3D Pipeline with Diffusion Models",
     "category": [
       "GenAI",
       "CV"
     ],
-    "one_liner": "Explore diffusion-guided generation of textured 3D assets through modern image and 3D modeling techniques.",
-    "problem": "Creating detailed 3D assets is slow and specialized, while text- or image-guided generation can accelerate ideation and prototyping.",
+    "one_liner": "Explore text- and image-guided 3D generation using diffusion models, LoRA, ControlNet, neural rendering, and modern 3D representations.",
+    "problem": "Creating detailed 3D assets manually is time-consuming and requires specialized skills, while generative methods can accelerate ideation, texturing, reconstruction, and prototyping.",
     "approach": [
-      "Used diffusion-based guidance methods such as ControlNet and LoRA for detail generation",
-      "Explored 3D representations and reconstruction approaches including NeRF-style and splatting-inspired workflows",
-      "Connected experimental components into prototype interfaces for testing end-to-end generation ideas"
+      "Used diffusion-based guidance methods such as Stable Diffusion, ControlNet, and LoRA for controllable visual generation",
+      "Explored 3D representations and reconstruction approaches including NeRF-style, splatting-inspired, and mesh-based workflows",
+      "Combined PyTorch3D, Open3D, Blender, and web-based 3D technologies for experimentation and visualization",
+      "Connected research components into prototype interfaces for end-to-end testing"
     ],
     "results": [
-      "Research-oriented pipeline for faster 3D asset ideation",
-      "Reusable experimental foundation for generative 3D workflows"
+      "Created a research-oriented pipeline for faster 3D asset ideation and prototyping",
+      "Built a reusable experimental foundation for generative 3D, reconstruction, and interactive visualization workflows",
+      "Evaluated multiple modern components for bridging 2D generative models with 3D content creation"
     ],
     "tech": [
       "Stable Diffusion",
@@ -651,21 +693,24 @@
   },
   {
     "slug": "diabetic-retinopathy-detection",
-    "title": "Diabetic Retinopathy Screening with Transfer Learning",
+    "title": "CNN Image Classification with Transfer Learning",
     "category": [
       "CV",
       "Deep Learning"
     ],
-    "one_liner": "Classify retinal fundus images with CNNs and transfer learning to support diabetic retinopathy screening workflows.",
-    "problem": "Retinal image review is time-intensive, and real-world images vary in quality, contrast, and disease visibility.",
+    "one_liner": "Build robust image-classification pipelines with CNNs, transfer learning, fine-tuning, data augmentation, and API-based deployment.",
+    "problem": "Image-classification systems must handle variation in lighting, image quality, class imbalance, backgrounds, and visual ambiguity while still producing reliable predictions on unseen data.",
     "approach": [
-      "Applied preprocessing, contrast enhancement, and augmentation to improve input robustness",
-      "Built CNN and transfer-learning models with fine-tuning across established architectures",
-      "Used class-balancing and threshold-aware evaluation to support screening-oriented classification"
+      "Built end-to-end preprocessing, normalization, contrast-enhancement, and data-augmentation pipelines",
+      "Trained CNN classifiers and transfer-learning models using established architectures including AlexNet, GoogLeNet, and ResNet",
+      "Fine-tuned pretrained networks and compared model behavior across architectures",
+      "Applied class-balancing and threshold-aware evaluation to improve robustness on imbalanced datasets",
+      "Connected the trained model with a FastAPI-based application workflow for practical inference"
     ],
     "results": [
-      "Well-structured medical imaging classification pipeline",
-      "Stronger robustness for low-quality or visually challenging retinal samples"
+      "Created a reusable deep-learning image-classification pipeline from preprocessing through deployment",
+      "Improved model robustness for noisy, low-quality, and visually challenging image samples",
+      "Built a transferable workflow suitable for medical imaging, quality inspection, product classification, and other image-recognition tasks"
     ],
     "tech": [
       "CNN",
@@ -673,9 +718,9 @@
       "GoogLeNet",
       "ResNet",
       "Fine-tuning",
-      "Data processing",
+      "Data Processing",
       "Git",
-      "firebase authentication",
+      "Firebase Authentication",
       "FastAPI",
       "HTML/CSS"
     ],
