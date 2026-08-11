@@ -78,9 +78,63 @@
       "Docker"
     ],
     "media": {
-      "cover": "media/document-ai/doc_ai.png",
-      "images": [],
+      "cover": "media/document-ai/cover.png",
+      "images": ["media/document-ai/doc_ai.png"],
       "videos": []
+    }
+  },
+  {
+    "slug": "ai-powered-digital-health-saas",
+    "title": "AI-Powered Digital Health SaaS Platform",
+    "category": [
+      "GenAI",
+      "NLP",
+      "Full-Stack AI"
+    ],
+    "one_liner": "Built and integrated AI-assisted healthcare workflows within a full-stack SaaS platform, contributing across AI development, Lovable frontend implementation, database integration, backend APIs, and QA-driven product delivery.",
+    "problem": "Healthcare professionals work with large amounts of client-generated information while also managing documentation, follow-up activities, and ongoing care workflows. The goal was to build a clinician-led digital platform that combines journaling, structured healthcare workflows, and AI assistance while keeping sensitive AI-generated outputs reviewable and under human control.",
+    "approach": [
+      "Developed and integrated AI-assisted workflows for transforming journal and application data into structured summaries, documentation drafts, recommendations, and actionable insights",
+      "Worked on LLM-based functionality with prompt design and structured output generation for application-ready AI responses",
+      "Implemented and refined user-facing interfaces using Lovable alongside frontend code, converting product requirements into practical client and clinician workflows",
+      "Connected frontend functionality with database-backed workflows to support persistent user, journal, and application data",
+      "Integrated AI features with backend APIs and application data flows so generated outputs could be used directly within the SaaS product",
+      "Collaborated closely with backend developers on API contracts, data structures, integration requirements, debugging, and end-to-end feature behavior",
+      "Worked closely with QA to reproduce issues, validate frontend and AI behavior, test edge cases, and improve feature reliability before release",
+      "Contributed to human-in-the-loop AI workflows where generated content remained editable and reviewable rather than being treated as autonomous clinical decisions",
+      "Worked across multiple parts of the product lifecycle including AI development, frontend implementation, database integration, debugging, testing, and cross-functional feature delivery"
+    ],
+    "results": [
+      "Delivered AI capabilities as part of a complete multi-user SaaS product rather than as isolated AI prototypes",
+      "Connected AI workflows with frontend interfaces, persistent application data, and backend services to support end-to-end user experiences",
+      "Built AI-assisted functionality for summarization, structured documentation, recommendations, and data-driven workflow support",
+      "Supported client-facing and clinician-facing workflows within a role-based digital healthcare platform",
+      "Improved product reliability through iterative testing and close collaboration with QA and backend engineering",
+      "Implemented AI functionality with human review, editability, and traceability as core design requirements",
+      "Demonstrated full-stack AI product development experience spanning AI integration, UI development, database workflows, API integration, testing, and product delivery"
+    ],
+    "tech": [
+      "LLMs",
+      "Generative AI",
+      "Prompt Engineering",
+      "NLP",
+      "AI Integration",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Lovable",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "REST APIs",
+      "Database Integration",
+      "Docker",
+      "Railway",
+      "GitHub"
+    ],
+    "media": {
+      "cover": "media/therapy/cover.png",
+      "images": [],
+      "videos": ["media/therapy/dyscoverwell.mp4"]
     }
   },
   {
@@ -155,7 +209,7 @@
     ],
     "media": {
       "cover": "media/text-gen-ui/cover.png",
-      "images": [],
+      "images": ["media/text-gen-ui/example.png"],
       "videos": [
         "media/text-gen-ui/student_portal.mp4"
       ]
@@ -187,8 +241,8 @@
       "CUDA"
     ],
     "media": {
-      "cover": "media/character-consistency-lora/cover.jpg",
-      "images": [],
+      "cover": "media/character-consistency-lora/cover.png",
+      "images": ["media/character-consistency-lora/example.jpg"],
       "videos": []
     }
   },
@@ -265,8 +319,8 @@
       "AWS"
     ],
     "media": {
-      "cover": "media/address-extraction/add_demo.png",
-      "images": [],
+      "cover": "media/address-extraction/cover.png",
+      "images": ["media/address-extraction/add_demo.png"],
       "videos": []
     }
   },
@@ -349,7 +403,7 @@
     ],
     "media": {
       "cover": "media/stock-rag/cover.png",
-      "images": [],
+      "images": ["media/stock-rag/example.png", "media/stock-rag/example2.png"],
       "videos": []
     }
   },
@@ -381,7 +435,7 @@
     ],
     "media": {
       "cover": "media/n8n/cover.png",
-      "images": [],
+      "images": ["media/n8n/workflow_example.png"],
       "videos": []
     }
   },
@@ -425,7 +479,7 @@
     ],
     "media": {
       "cover": "media/pose_estimation/cover.png",
-      "images": [],
+      "images": ["media/pose_estimation/example.jpeg"],
       "videos": [
         "media/pose_estimation/surfing.mp4"
       ]
