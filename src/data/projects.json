@@ -1,6 +1,6 @@
 [
   {
-    "slug": "ai-powered-digital-health-saas",
+    "slug": "ai-powered-saas",
     "title": "LLM-Powered SaaS Platform with Human-in-the-Loop AI Workflows",
     "category": [
       "GenAI",
@@ -47,10 +47,7 @@
     "media": {
       "cover": "media/therapy/cover.png",
       "images": [
-        "media/therapy/dashboard.png",
-        "media/therapy/client-profile.png",
-        "media/therapy/admin-overview.png",
-        "media/therapy/ai-workflows.png"
+
       ],
       "videos": [
         "media/therapy/dyscoverwell.mp4"
@@ -58,12 +55,12 @@
     }
   },
   {
-    "slug": "multilingual-rag-postgresql-llm-assistant",
-    "title": "Multilingual RAG & PostgreSQL LLM Data Assistant",
+    "slug": "llm-data-agent-rag-sql",
+    "title": "LLM Data Agent with RAG + SQL",
     "category": [
-      "RAG",
-      "GenAI",
-      "NLP"
+        "Agentic AI",
+        "RAG",
+        "NLP"
     ],
     "one_liner": "Query both unstructured documents and structured PostgreSQL data through an LLM-powered assistant with multilingual RAG, semantic retrieval, citations, and natural-language data access.",
     "problem": "Teams often work across two very different information sources: unstructured PDFs, presentations, scanned pages, and visual documents, plus structured operational data stored in databases. Finding grounded answers, tracing document responses back to sources, or querying PostgreSQL without writing SQL can slow down learning and business decision-making.",
@@ -115,8 +112,7 @@
     "media": {
       "cover": "media/medical-rag/cover.png",
       "images": [
-        "media/stock-rag/example.png",
-        "media/stock-rag/example2.png"
+        "media/medical-rag/postgresql-example.png"
       ],
       "videos": [
         "media/medical-rag/medical_rag.mp4"
@@ -124,12 +120,12 @@
     }
   },
   {
-    "slug": "document-ai-human-review-extraction",
-    "title": "Document AI & LLM-Assisted Human Review for Data Extraction",
+    "slug": "document-ai-agent-ocr-llm",
+    "title": "Document AI Agent with OCR + LLM",
     "category": [
-      "CV",
-      "NLP",
-      "GenAI"
+    "Agentic AI",
+    "Document AI",
+    "GenAI"
     ],
     "one_liner": "Extract structured data from PDFs and scanned documents using OCR, layout analysis, NLP, vision/LLM assistance, confidence-aware validation, and human-in-the-loop review.",
     "problem": "Organizations receive PDFs and scanned documents with inconsistent layouts, noisy images, fragmented fields, and changing templates. Fully manual extraction is expensive, while rigid automation can fail when document structure changes or uncertain fields require human judgment.",
@@ -174,19 +170,18 @@
       "cover": "media/document-ai/cover.png",
       "images": [
         "media/document-ai/doc_ai.png",
-        "media/address-extraction/cover.png",
-        "media/address-extraction/add_demo.png"
+        "media/document-ai/address-review-demo.png"
       ],
       "videos": []
     }
   },
   {
-    "slug": "custom-llm-text-generation-with-data-ui",
-    "title": "RAG & LLM Content Generation Platform with Review UI",
+    "slug": "rag-content-agent-llm",
+    "title": "RAG Content Agent with LLM",
     "category": [
-      "GenAI",
-      "NLP",
-      "RAG"
+      "Agentic AI",
+      "RAG",
+      "GenAI"
     ],
     "one_liner": "Generate domain-specific content from connected knowledge sources using RAG and LLMs through a controllable, review-friendly application interface.",
     "problem": "Businesses need AI-generated content that reflects their own information, follows constraints, and remains easy to review before it is published, shared, or used in an operational workflow.",
@@ -224,7 +219,6 @@
     "media": {
       "cover": "media/text-gen-ui/cover.png",
       "images": [
-        "media/text-gen-ui/example.png"
       ],
       "videos": [
         "media/text-gen-ui/student_portal.mp4"
@@ -487,7 +481,7 @@
   },
   {
     "slug": "ml-prediction-dashboard",
-    "title": "End-to-End ML Prediction Platform with REST API Serving",
+    "title": "Machine Learning & Time Series Forecasting with Interactive Data Visualization",
     "category": [
       "ML"
     ],
