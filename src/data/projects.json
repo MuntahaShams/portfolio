@@ -126,7 +126,7 @@
       "CV",
       "Full-Stack AI"
     ],
-    "one_liner": "Built and deployed an end-to-end AI platform that converts full-body images or SMPL inputs into participant-specific OpenSim musculoskeletal models using SAM3D, SMPL/SKEL geometry, tissue-based BSIP estimation, and reproducible GPU-backed processing.",
+    "one_liner": "Built an end-to-end AI platform that converts body images or SMPL inputs into participant-specific OpenSim models using SAM3D, SMPL/SKEL, BSIP estimation, and GPU-backed processing.",
     "problem": "Creating participant-specific biomechanical models normally requires several disconnected research tools, manual processing steps, complex scientific dependencies, and significant expertise in 3D body modeling and OpenSim. The goal was to turn the existing SIPP research workflow into an accessible web platform that could process body images or SMPL geometry, estimate subject-specific body segment inertial parameters, generate personalized OpenSim models, and provide reproducible benchmark results.",
     "approach": [
       "Built a full-stack web platform supporting image-based and SMPL-based subject-specific OpenSim model generation",
