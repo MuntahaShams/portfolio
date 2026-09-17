@@ -120,6 +120,76 @@
     }
   },
   {
+    "slug": "subject-specific-biomechanics-platform",
+    "title": "AI-Powered Subject-Specific 3D Human Modeling and OpenSim Personalization Platform",
+    "category": [
+      "Computer Vision",
+      "3D Human Modeling",
+      "Medical AI",
+      "Biomechanics",
+      "Full-Stack AI"
+    ],
+    "one_liner": "Built and deployed an end-to-end AI platform that converts full-body images or SMPL inputs into participant-specific OpenSim musculoskeletal models using SAM3D, SMPL/SKEL geometry, tissue-based BSIP estimation, and reproducible GPU-backed processing.",
+    "problem": "Creating participant-specific biomechanical models normally requires several disconnected research tools, manual processing steps, complex scientific dependencies, and significant expertise in 3D body modeling and OpenSim. The goal was to turn the existing SIPP research workflow into an accessible web platform that could process body images or SMPL geometry, estimate subject-specific body segment inertial parameters, generate personalized OpenSim models, and provide reproducible benchmark results.",
+    "approach": [
+      "Built a full-stack web platform supporting image-based and SMPL-based subject-specific OpenSim model generation",
+      "Integrated the image pipeline from front-view RGB input through SAM3D reconstruction, MHR-to-SMPL conversion, height calibration, participant SMPL geometry, and downstream biomechanical processing",
+      "Integrated SKEL fitting and participant-specific anatomical geometry validation before body-segment parameter estimation",
+      "Added SOMA as the default tissue-model workflow by registering SOMA S1 skin, muscle, and skeleton geometry to participant-specific neutral SKEL geometry before segment-level BSIP estimation",
+      "Maintained HIT-based adipose, bone, and lean-tissue estimation as an alternative tissue model and added a no-internal-tissue option based on the outer SMPL body with uniform-density estimation",
+      "Implemented hull-based upper-limb BSIP handling for image-derived models together with SKEL-to-OpenSim coordinate-axis correction for arm CoM and inertia",
+      "Normalized estimated segment properties to participant body mass, validated mass, center of mass, and inertia values, and wrote the resulting BSIPs into personalized OpenSim models",
+      "Implemented experimental direct OpenSim scaling workflows for both SMPL and image inputs using predefined anatomical SMPL vertex markers, static TRC generation, and the OpenSim Python ScaleTool / ModelScaler API",
+      "Added support for SMPL .npz inputs and parameter-based .pkl reconstruction using gender-specific SMPL models",
+      "Built asynchronous job processing with FastAPI, Redis/RQ workers, isolated scientific containers, GPU-backed image reconstruction, job status tracking, downloadable outputs, and automated 14-day data retention",
+      "Developed an interactive React/TypeScript benchmark interface for participant-level residual analysis, MRI-based BSIP comparison, and model-to-model evaluation",
+      "Deployed and debugged the complete system on an FAU Linux workstation using Docker Compose, Nginx, CUDA, OpenSim, and host-side GPU services"
+    ],
+    "results": [
+      "Delivered a working web interface for Picture + OpenSim, SMPL + OpenSim, SMPL only, and Picture only workflows",
+      "Evaluated 9 MRI/BSIP configurations across 6 participants using subject-specific mass, center-of-mass, and inertia comparisons",
+      "Evaluated 7 OpenSim model configurations across 31 valid gait trials using inverse-dynamics residual force and residual moment",
+      "The Picture + SAM3D + SOMA configuration reduced mean residual moment by approximately 9.4% and residual force by approximately 5.4% compared with the generic OpenSim baseline",
+      "Integrated SOMA, HIT, and no-internal-tissue alternatives into a common production workflow instead of maintaining separate research scripts",
+      "Added reproducible benchmark scripts, participant-level UI visualization, containerized scientific execution, and automated server-side job cleanup",
+      "Kept the experimental SMPL-only and Picture-only ScaleTool workflows outside the benchmark because the anatomical marker set and direct scaling formulation still require validation"
+    ],
+    "tech": [
+      "Python",
+      "PyTorch",
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Docker",
+      "Docker Compose",
+      "Redis",
+      "RQ",
+      "Nginx",
+      "Linux",
+      "NVIDIA CUDA",
+      "OpenSim",
+      "SMPL",
+      "SAM3D",
+      "MHR",
+      "SKEL",
+      "SOMA",
+      "HIT",
+      "3D Human Modeling",
+      "Biomechanics",
+      "Inverse Dynamics",
+      "REST APIs",
+      "GitHub"
+    ],
+    "media": {
+      "cover": "media/markus_hiwi/cover.png",
+      "images": [
+      ],
+      "videos": [
+        "media/markus_hiwi/sipp_web_demo.mp4"
+      ]
+    }
+  },
+  {
     "slug": "document-ai-agent-ocr-llm",
     "title": "Document AI Agent with OCR + LLM",
     "category": [
