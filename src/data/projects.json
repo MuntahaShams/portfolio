@@ -125,8 +125,6 @@
     "category": [
       "Computer Vision",
       "3D Human Modeling",
-      "Medical AI",
-      "Biomechanics",
       "Full-Stack AI"
     ],
     "one_liner": "Built and deployed an end-to-end AI platform that converts full-body images or SMPL inputs into participant-specific OpenSim musculoskeletal models using SAM3D, SMPL/SKEL geometry, tissue-based BSIP estimation, and reproducible GPU-backed processing.",
